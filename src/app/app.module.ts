@@ -10,14 +10,16 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { SharedModuleModule } from './shared-module/shared-module.module';
+// import { FooterComponent } from './shared-module/footer/footer.component';
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
+    SharedModuleModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -25,6 +27,7 @@ registerLocaleData(en);
     BrowserAnimationsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 export class AppModule { }
