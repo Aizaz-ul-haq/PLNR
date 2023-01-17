@@ -1,1 +1,97 @@
-<p>home-module works!</p>
+<section class="sell-home">
+    <div nz-row>
+        <div nz-col nz-col [nzXs]="{ span: 24, offset: 0 }" [nzMd]="{ span: 24, offset: 0 }"
+            [nzLg]="{ span: 10, offset: 2 }">
+            <h1>Financial Planning <span class="d-block">Simplified</span> </h1>
+            <p>Fee-Only | Flat Fixed Fee | No Product Selling | No Commission
+                <span>
+                    Experience in handling <strong> 500+</strong> fee-only financial planning clients
+                    
+                </span>
+            </p>
+        </div>
+        <div nz-col [nzLg]="{ span:11 , offset: 1 }" [nzMd]="{ span: 24, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
+            class="text-center">
+            <!-- <img [src]="assetUrl +'/images/thumbnail.svg'"  alt="Logo" class="sell-img" /> -->
+            <picture>
+                <source srcset="
+                      https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.webp 1x,
+                      https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.webp 2x"
+                    type="image/webp" />
+                <source srcset="
+                      https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
+                    type="image/svg" />
+                <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
+                    class="sell-img" alt="home_illustration" />
+            </picture>
+        </div>
+    </div>
+</section>
+
+<section class="why_falaya">
+    <div nz-row class="section-heading">
+        <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}">
+            <div class="why_falaya_body">
+                <h2>Why <strong>Falaya?</strong></h2>
+                <p>Falaya gives you the tech and support you need to sell your home yourself.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="falaya-card">
+    <div nz-row>
+        <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
+            style="visibility:visible;position:sticky;">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Control Your Costs</h3>
+                    <p>Mix and match packages and on-demand services to fit your needs.</p>
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/cost_control.svg" alt="cost_control" />
+                </div>
+            </div>
+        </div>
+        <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
+            style="visibility:visible;position:sticky;">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Maximize Your Exposure</h3>
+                    <p>Your listing goes on the MLS, Zillow, Truila, Reator.com, Redfin, and more.</p>
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/max_exposure.svg" alt="max_exposure" />
+                </div>
+            </div>
+        </div>
+        <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
+            style="visibility:visible;position:sticky;">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Keep Up With Tasks</h3>
+                    <p>Always know what to do next with our task-driven platform.</p>
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/keepup_task.svg" alt="max_exposure" />
+                </div>
+            </div>
+        </div>
+        <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
+            style="visibility:visible;position:sticky;">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Sign Your Documents</h3>
+                    <p>Easily create and digitally sign all legal documents.</p>
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/sign_doc.svg" alt="max_exposure" />
+                </div>
+            </div>
+        </div>
+        <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
+            style="visibility:visible;position:sticky;">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Get On-Demand Support</h3>
+                    <p>Connect virtually with licensed Falaya agents when and where you need them.</p>
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/demand_support.svg" alt="max_exposure" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore" >LEARN
+        MORE</button>
+</section>
