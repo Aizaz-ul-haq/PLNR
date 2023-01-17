@@ -1,1 +1,228 @@
-<p>top-nav-bar works!</p>
+<nz-layout class="layout" id="nav-layout" [hidden]="hideNavbar">
+    <nz-header
+      id="header-top"
+      class="header-top">
+      <div nz-row nzGutter="16">
+        <div nz-col nzSpan="14">
+          <div class="mobile-menu-icon">
+            <img [src]="/assets/images/ic-burger-menu.svg" alt="menu icon" />
+          </div>
+          <div class="full-logo">
+            <img
+              [src]="/assets/images/logo.png'"
+              alt="logo"
+              width="96" height="30" 
+            />
+          </div>
+  
+          <ul
+            nz-menu
+            [nzMode]="'horizontal'"
+            class="nav-top pull-left"
+          >
+            <li nz-menu-item >
+              <a > Home </a>
+            </li>
+            <li nz-menu-item >
+                <a > Start Here </a>
+            </li>
+            <li nz-menu-item >
+                <a > FAQ </a>
+            </li>
+            <li nz-menu-item >
+                <a > Get in Touch</a>
+            </li>
+            <li nz-menu-item >
+                <a > Services</a>
+            </li>
+            <li nz-menu-item >
+                <a>Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div nz-col class="text-right" nzSpan="10">
+          <div class="mobile-signup">
+            <button nz-button nzType="default">
+              LOG IN
+            </button>
+          </div>
+          <div class="mobile-signup">
+            <ul
+              nz-menu
+              [nzMode]="'horizontal'"
+              class="mobile-dropdown"
+            >
+              <li>
+                <a id="sign_in">LOG IN</a>
+              </li>
+              <li>
+                <a id="sign_in">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav-top-right pull-right">
+            <li>
+              <a id="sign_in">Sign In</a>
+            </li>
+            <li>
+                <a id="sign_in">Sign Up</a>
+            </li>
+            
+           
+          </ul>
+        </div>
+      </div>
+    </nz-header>
+  
+    <!-- <div class="mobile-menu" [class.hide]="mobileNavToggle" *ngIf="isMobile || isTab">
+      <nz-header>
+        <div nz-row>
+          <div nz-col nzSpan="2">
+            <div class="close" (click)="toggleMobileNav()">
+              <img [src]="assetUrl + '/icons/ic-burger-close.svg'" alt="menu icon" />
+            </div>
+          </div>
+          <div nz-col nzSpan="12">
+            <a routerLink="/">
+              <img
+                class="menu-logo"
+                [src]="assetUrl + '/images/unlockd-logo.png'"
+                alt="Falaya-logo"
+                width="" height="" 
+              />
+            </a>
+          </div>
+          <div nz-col nzSpan="8" *ngIf="!isLogin">
+            <button nz-button nzType="default" routerLink="/signup" id="sign_up_mobile">
+              SIGN UP
+            </button>
+          </div>
+        </div>
+      </nz-header>
+      <div nz-row>
+        <div nz-col nzSpan="24">
+          <ul>
+            <li
+              routerLinkActive="active ant-menu-item-selected"
+              [routerLink]="['/buy']"
+              (click)="navigated()"
+            >
+              Buy
+            </li>
+            <li
+              routerLinkActive="active ant-menu-item-selected"
+              [routerLink]="['/sell']"
+              (click)="navigated()"
+            >
+              Sell
+            </li>
+            <li 
+              routerLinkActive="active ant-menu-item-selected"
+              [routerLink]="['/features']"
+              (click)="navigated()"
+              >
+              Features
+            </li>
+            <li
+              routerLinkActive="active ant-menu-item-selected"
+              [routerLink]="['/pricing']"
+              (click)="navigated()"
+            >
+              Pricing
+            </li>
+            <li
+              routerLinkActive="active ant-menu-item-selected"
+              [routerLink]="['/comparison']"
+              (click)="navigated()"
+            >
+              Comparison
+            </li>
+            <li
+              routerLinkActive="active ant-menu-item-selected"
+              [routerLink]="['/about-us']"
+              (click)="navigated()"
+            >
+              About
+            </li>
+            <li
+              routerLinkActive="active ant-menu-item-selected"
+              (click)="toggleDropDown()"
+            >
+              Learn<i *ngIf="!showDropDown" nz-icon nzType="caret-down" nzTheme="outline" style="font-size:16px;margin-left:2px;margin-bottom:2px;"></i>
+              <i *ngIf="showDropDown" nz-icon nzType="caret-up" nzTheme="outline" style="font-size:16px;margin-left:2px;margin-bottom:2px;"></i>
+            </li>
+            <div *ngIf="showDropDown">
+              <li (click)="openBlog()">Articles</li>
+              <li (click)="faqs()">FAQs</li>
+              <li (click)="legalDocs()">Legal Documents</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div nz-row *ngIf="!isLogin">
+        <div nz-col nzSpan="10" nzOffset="1">
+          <button
+            nz-button
+            nzType="default"
+            (click)="loginClicked()"
+            routerLink="/login"
+            [nzSize]=""
+            nzShape="round"
+            id="sign_in_mobile"
+          >
+            SIGN IN
+          </button>
+        </div>
+        <div nz-col nzSpan="10" nzOffset="2">
+          <button
+            nz-button
+            nzType="default"
+            (click)="signupClicked()"
+            routerLink="/signup"
+            [nzSize]=""
+            nzShape="round"
+            id="sign_up_mobile"
+          >
+            SIGN UP
+          </button>
+        </div>
+      </div>
+      <div nz-row>
+        <div nz-col nzSpan="22" nzOffset="1">
+          <button
+            class="property"
+            nz-button
+            nzType="default"
+            [nzSize]=""
+            nzShape="round"
+            (click)="listAPropertyPaymentClick()"
+            id="list_a_property"
+          >
+            LIST A PROPERTY
+          </button>
+        </div>
+      </div>
+      <div nz-row style="margin-left: 8px;">
+        <div nz-col nzSpan="8" nzOffset="2">
+          
+          <a
+          id="download_app_apple"
+            href="https://apps.apple.com/us/app/falaya/id1551154057"
+            target="_blank"
+            >
+            <img [src]="assetUrl + '/images/apple.svg'" alt="apple logo" width="150" height="45" />
+          </a>
+        </div>
+        <div nz-col nzSpan="8" nzOffset="2">
+          <a
+          id="download_app_google"
+          href="https://play.google.com/store/apps/details?id=com.falaya.app"
+          target="_blank"
+          >
+          <img [src]="assetUrl + '/images/android.svg'" alt="android logo" width="150" height="45" />
+          </a>
+        </div>
+      </div>
+    </div> -->
+    
+  </nz-layout>
