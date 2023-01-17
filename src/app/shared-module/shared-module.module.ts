@@ -9,6 +9,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { FaqsComponent } from './faqs/faqs.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { InvestorCharterComponent } from './investor-charter/investor-charter.component';
+import { SHAREDZORROMODULESModule } from 'src/shared-zorro-modules/shared-zorro-modules.module';
 
 
 
@@ -26,12 +27,13 @@ import { InvestorCharterComponent } from './investor-charter/investor-charter.co
   imports: [
     CommonModule,
     SharedRoutes,
-   
+    SHAREDZORROMODULESModule
   ],
   exports: [
     FooterComponent,
     HomeModuleComponent,
     TopNavBarComponent,
+    SHAREDZORROMODULESModule
     
   ]
 })

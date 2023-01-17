@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-nav-bar.component.scss']
 })
 export class TopNavBarComponent implements OnInit {
-
+  hideNavbar: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
