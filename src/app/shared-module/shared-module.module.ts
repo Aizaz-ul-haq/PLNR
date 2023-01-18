@@ -13,6 +13,9 @@ import { SHAREDZORROMODULESModule } from 'src/shared-zorro-modules/shared-zorro-
 import { SectionHeadingComponent } from './section-heading/section-heading.component';
 import { StartHereComponent } from './start-here/start-here.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { SlickTestimonialsComponent } from './slick-testimonials/slick-testimonials.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 
 
@@ -28,12 +31,15 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     InvestorCharterComponent,
     SectionHeadingComponent,
     StartHereComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    SlickTestimonialsComponent
   ],
   imports: [
-    CommonModule,
+  CommonModule,
     SharedRoutes,
-    SHAREDZORROMODULESModule
+    SHAREDZORROMODULESModule,
+    SlickCarouselModule,
+    
   ],
   exports: [
     FooterComponent,
@@ -41,7 +47,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     TopNavBarComponent,
     SHAREDZORROMODULESModule,
     StartHereComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    SlickTestimonialsComponent,
+    
     
   ]
 })

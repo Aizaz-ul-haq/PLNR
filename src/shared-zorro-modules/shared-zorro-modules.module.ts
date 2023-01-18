@@ -39,6 +39,9 @@ import { NzRateModule } from 'ng-zorro-antd/rate';
 import { NzTimePickerModule } from 'ng-zorro-antd/time-picker';
 import { NzAlertModule } from 'ng-zorro-antd/alert';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
+import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -85,9 +88,12 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
     NzRateModule,
     NzTimePickerModule,
     NzAlertModule,
-    NzInputNumberModule
+    NzInputNumberModule,
+    NzCollapseModule,
+    RouterModule
   ],
   exports: [
+    NzCollapseModule,
     NzGridModule,
     NzLayoutModule,
     NzIconModule,
@@ -127,7 +133,8 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
     NzRateModule,
     NzTimePickerModule,
     NzAlertModule,
-    NzInputNumberModule
+    NzInputNumberModule,
+    RouterModule
   ]
 })
 export class SHAREDZORROMODULESModule { }

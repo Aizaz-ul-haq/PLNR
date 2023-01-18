@@ -21,7 +21,7 @@
             class="nav-top pull-left"
           >
             <li nz-menu-item >
-              <a > Home </a>
+              <a [routerLink]="['/']" routerLinkActive="router-link-active" > Home </a>
             </li>
             <li nz-menu-item >
                 <a > Start Here </a>
@@ -76,8 +76,9 @@
               routerLinkActive="active ant-menu-item-selected">
             Home
             </li>
-            <li
-              routerLinkActive="active ant-menu-item-selected">
+            <li  
+              routerLinkActive="active ant-menu-item-selected"
+              routerLink="/start-here">
             Start Here
             </li>
             <li

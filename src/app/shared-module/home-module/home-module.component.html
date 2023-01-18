@@ -12,17 +12,21 @@
         </div>
         <div nz-col [nzLg]="{ span:11 , offset: 1 }" [nzMd]="{ span: 24, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
             class="text-center">
-            <picture>
+            <!-- <picture>
                 <source srcset="
                       https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.webp 1x,
                       https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.webp 2x"
                     type="image/webp" />
                 <source srcset="
                       https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
-                    type="image/svg" />
-                <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
-                    class="sell-img" alt="home_illustration" />
-            </picture>
+                    type="image/svg" /> -->
+                <!-- <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
+                    class="sell-img" alt="home_illustration" /> -->
+                    <!-- <iframe src=""></iframe> -->
+                    <iframe src="https://www.youtube.com/embed/g9Aq1YtSo-o" title="Goal Planning" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen  class="sell-img"></iframe>
+            <!-- </picture> -->
         </div>
     </div>
 </section>
@@ -120,49 +124,45 @@
         <div class="cards">
             <div class="card">
                 <div class="card-body">
-                    <h3>Create A Listing</h3>
-                    <p>Select your lisitng plan, add on-demand services, and complete your listing application in as
-                        little as 5 minutes.</p>
+                    <h3>Introduction</h3>
+                    <p>We discuss our offerings to address your personalized financial planning needs.</p>
                     <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/createlisting.svg" alt="create lisitng image" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h3>Listing Goes Live Online</h3>
-                    <p>On a date of your choosing, your listing will be published to the MLS, Zillow, Truila,
-                        Reator.com, Redfin, and more.</p>
+                    <h3>Sign up</h3>
+                    <p>We sign an agreement, conduct a compliance check, do risk profiling, and collect fees.</p>
                     <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingslive.svg" alt="listing goes live" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h3>Go Under Contract</h3>
-                    <p>Manage tours and respond to offers right from the Falaya dashboard.</p>
+                    <h3>Data Collection</h3>
+                    <p>We collect essential data and raise queries if any information is missing.</p>
                     <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingcontract.svg" alt="go under contract" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h3>Close The Deal</h3>
-                    <p>The Falaya team monitors your transaction and provides support to make sure you get to the
-                        closing table.</p>
+                    <h3>Calculations</h3>
+                    <p>We map your financial goals with existing resources and let you know the monthly investment required to achieve your
+                    goals.</p>
                     <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingclosing.svg" alt="close the deal" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h3>Close The Deal</h3>
-                    <p>The Falaya team monitors your transaction and provides support to make sure you get to the
-                        closing table.</p>
+                    <h3>Final Plan</h3>
+                    <p>We share the financial plan with product recommendations after you approve the calculations.</p>
                     <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingclosing.svg"
                         alt="close the deal" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h3>Close The Deal</h3>
-                    <p>The Falaya team monitors your transaction and provides support to make sure you get to the
-                        closing table.</p>
+                    <h3>Implementation</h3>
+                    <p>Finally, you start implementing the plan by yourself. We provide help if you face any problem in implementation.</p>
                     <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingclosing.svg"
                         alt="close the deal" />
                 </div>
@@ -362,5 +362,170 @@
         <app-section-heading [title]="'See our customer'" [isHomePage]="true"
             [spantitle]="'testimonials'"></app-section-heading>
         <!-- <ng-template #TestimonialsHost></ng-template> -->
+        <app-slick-testimonials [isFeaturesComponent]="true"></app-slick-testimonials>
     </div>
 </section>
+
+<section class="reviews_section">
+    <div class="container">
+        <div nz-row>
+            <div nz-col [nzXs]="{ span: 24 }" [nzLg]="{ span: 8}" [nzMd]="{ span: 8 }">
+                <div class="reviews_outer_container">
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/icons/app-store-1.svg" width="48px" height="48px" />
+                    <div class="review-box">
+                        <h2>4.8</h2>
+                        <div class="star-div">
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                        </div>
+                    </div>
+                    <p>Based on 18 <a>reviews</a></p>
+                </div>
+
+            </div>
+            <div nz-col [nzXs]="{ span: 24 }" [nzLg]="{ span: 8}" [nzMd]="{ span: 8 }">
+                <div class="reviews_outer_container">
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/icons/google-g-2015.svg" width="48px" height="48px" />
+                    <div class="review-box">
+                        <h2>5.0</h2>
+                        <div class="star-div">
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                        </div>
+                    </div>
+                    <p>Based on 49 <a>reviews</a></p>
+                </div>
+            </div>
+            <div nz-col [nzXs]="{ span: 24 }" [nzLg]="{ span: 8}" [nzMd]="{ span: 8 }">
+                <div class="reviews_outer_container">
+                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/icons/zillow.svg" width="48px" height="48px" />
+                    <div class="review-box">
+                        <h2>5.0</h2>
+                        <div class="star-div">
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                            <i nz-icon [nzType]="'star'" [nzTheme]="'fill'" class="star_icon"></i>
+                        </div>
+                    </div>
+                    <p>Based on 37 <a>reviews</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq_section">
+    <!-- <div class="container">
+        <app-section-heading [title]="'Falaya'" [spantitle]="'FAQs'"></app-section-heading>
+    </div> -->
+    <div class="container">
+        <div nz-row>
+            <div nz-col [nzLg]="{ span: 8, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }">
+                <div class="faq-header">
+                    <h2>PLNR <span> Frequently <br />asked questions</span></h2>
+                </div>
+            </div>
+            <div nz-col [nzLg]="{ span:16 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+                <nz-collapse class="faq_collapsable">
+                    <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active"
+                        [nzDisabled]="panel.disabled" [nzExtra]="panel.active?extraTpl2:extraTpl"
+                        (nzActiveChange)="changePanel(panel)" [nzShowArrow]="false">
+                        <p style="margin:0;">
+                            {{panel.answer}}
+                        </p>
+                    </nz-collapse-panel>
+                </nz-collapse>
+            </div>
+        </div>
+    </div>
+</section>
+
+<ng-template #extraTpl>
+    <i nz-icon nzType="plus" nzTheme="outline"></i>
+</ng-template>
+<ng-template #extraTpl2>
+    <i nz-icon nzType="minus" nzTheme="outline"></i>
+</ng-template>
+
+
+
+<section class="box-section">
+    <div class="container">
+        <div nz-row>
+            <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="falaya-description">
+                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/guide.svg" alt="cost_control" />
+                            <div class="falaya-info ">
+                                <span>DIY</span>
+                                <h3>Blog</h3>
+                                <p>Extensive and in-depth collection of personal financial lessons.</p>
+                            </div>
+                        </div>
+                        <button nzbutton="" nztype="primary" nzsize="large" class="button"
+                            >Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="falaya-description">
+                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/home.svg" alt="cost_control" />
+                            <div class="falaya-info ">
+                                <span>DIY</span>
+                                <h3>Calculators</h3>
+                                <p>Free Financial calculators to make an informed decision.</p>
+                            </div>
+                        </div>
+                        <button nzbutton="" nztype="primary" nzsize="large" class="button"
+                            >Launch</button>
+
+                    </div>
+                </div>
+            </div>
+            <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="falaya-description">
+                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/contact-falaya.svg" alt="cost_control" />
+                            <div class="falaya-info ">
+                                <h3>Contact PLNR</h3>
+                                <p>Need more information about PLNR?</p>
+                            </div>
+                        </div>
+                        <button nzbutton="" nztype="primary" nzsize="large" class="button"
+                            >Contact Us</button>
+                    </div>
+                </div>
+            </div>
+            <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="falaya-description">
+                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/list-prop.svg" alt="cost_control" />
+                            <div class="falaya-info ">
+                                <h3>Sample financial plan</h3>
+                                <p>Check our financial plan to see how we promote simplicity.</p>
+                            </div>
+                        </div>
+                        <button nzbutton="" nztype="primary" nzsize="large" class="button"
+                            >Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

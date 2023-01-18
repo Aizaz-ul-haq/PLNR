@@ -1,3 +1,264 @@
+
+@import './../../../variables.scss';
+:host ::ng-deep {
+    .pin-spacer {
+        width: 100% !important;
+        // max-height: 3000px !important;
+        // overflow: hidden !important;
+        ///background-color: #f9f9f9;
+        background-color: #ffffff;
+        overflow: hidden !important;
+    }
+
+    .slick-dots {
+        li {
+            button {
+                &:before {
+                    opacity: 0.15;
+                }
+            }
+        }
+
+        li.slick-active {
+            button {
+                &:before {
+                    opacity: 1;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .slick-list {
+        .slick-track {
+            .slick-active {
+                .slider-description-box {
+                    box-shadow: 16px 24px 80px -10px rgba(8, 37, 42, 0.16);
+                }
+
+            }
+        }
+
+    }
+
+    .falaya-success {
+        .testimonial-slider {
+            .slick-list {
+                .slick-track {
+                    .slide {
+                        //width: calc(100% - 100px) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq_collapsable {
+        max-width: 800px;
+        margin: 0 auto;
+        border: none;
+
+        .ant-collapse-item {
+            border-color: #e7e9ee;
+        }
+
+        .ant-collapse-header {
+            font-size: 18px;
+            line-height: 60px;
+            color: #13171f;
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: #ffffff;
+
+            .ant-collapse-extra {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #f6fbfa;
+                margin: 10px 0;
+                border-radius: 4px;
+
+                i {
+                    color: $primary;
+                }
+            }
+        }
+
+        .ant-collapse-item-active {
+            border-bottom-color: #fff;
+
+            .ant-collapse-header {
+                font-weight: 600;
+
+                .ant-collapse-extra {
+                    background-color: $primary;
+
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .ant-collapse-content {
+            .ant-collapse-content-box {
+                padding: 28px 30px 30px;
+                border-radius: 4px;
+                background-color: #f9f9f9;
+
+                p {
+                    color: #3B414D;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .ant-collapse-content-active {
+            border-top-color: #fff;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .slick-list {
+            .slick-track {
+                .slick-active {
+                    .slider-description-box {
+                        box-shadow: 10px 14px 40px 0px rgba(8, 37, 42, 0.16);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .slick-list {
+            .slick-slide {}
+        }
+
+
+        .falaya-success {
+            .testimonial-slider {
+
+                .slick-list {
+                    overflow: visible;
+
+                    .slick-track {
+                        .slide {
+                            padding-right: 25px;
+
+                            .ant-row {
+                                margin-left: -10px;
+                            }
+                        }
+
+                        .slide.slick-active {
+                            .ant-row {
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+
+                .slick-dots {
+                    bottom: -40px !important;
+                }
+            }
+        }
+
+        .pin-spacer {
+            padding: 0px !important;
+            height: auto !important;
+        }
+
+        .faq_collapsable {
+            max-width: none;
+
+            .ant-collapse-header {
+                /* font-size: 14px;
+                line-height: 40px;  
+                background-color: #ffffff;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                padding-right: 40px;
+                position: relative;
+                padding-left:0px!important;*/
+
+
+
+                font-size: 16px;
+                line-height: 24px;
+                background-color: #ffffff;
+                text-overflow: unset;
+                overflow: unset;
+                white-space: unset;
+                position: relative;
+                padding: 16px 52px 16px 0 !important;
+
+                .ant-collapse-extra {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    right: 0;
+                    top: 23%;
+                    margin: 0px;
+                }
+            }
+
+            .ant-collapse-content {
+                .ant-collapse-content-box {
+                    padding: 18px 15px;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .slick-slide {
+            .card_image {
+                width: 100%;
+            }
+        }
+
+        .testimonial-section {
+            .testimonial-slider {
+                padding: 0 16px;
+            }
+
+            .section-heading {
+                padding: 0px 5px;
+
+                h3 {
+                    font-size: 26px !important;
+                    line-height: 26px !important;
+                }
+            }
+        }
+
+        .home-section.testimonial-section {
+            .slide_feature {
+                margin: 40px 15px 0 !important;
+                min-height: 300px;
+
+                .card {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+
+    .header-top {
+        border-color: #edf7f6 !important;
+    }
+}
 .sell-home {
     background-color: #EDF7F6;
     padding-top: 180px;
@@ -34,7 +295,8 @@
 
     .sell-img {
         width: 608px;
-        margin-top: -18px;
+        // margin-top: -18px;
+        height:250px;
     }
 
     .banner-search {
@@ -91,7 +353,7 @@
             border: none;
             line-height: 64px;
             border-radius: 0 4px 4px 0;
-            background-color: #4cb8ac;
+            background-color: $primary;
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 600;
@@ -99,7 +361,7 @@
 
             &:focus,
             &:hover {
-                background-color: #4cb8ac;
+                background-color: $primary;
             }
         }
     }
@@ -107,10 +369,10 @@
     .watch-btn {
         height: 80px;
         width: 278px;
-        border: 1px solid #4CB8AC;
+        border: 1px solid $primary;
         background-color: #FFFFFF;
         box-shadow: 8px 20px 60px 0 rgb(0 0 0 / 8%);
-        color: #4CB8AC;
+        color: $primary;
         font-family: Roboto;
         font-size: 18px;
         font-weight: bold;
@@ -178,7 +440,7 @@
 }
 .why_falaya {
     padding: 242px 0px 160px 0;
-    background-color: #0C1A38;
+    background-color: #214F76;
     clip-path: polygon(0 0%, 100% 0%, 100% 65%, 0% 100%);
     position: relative;
     height: 720px;
@@ -201,7 +463,7 @@
                 height: 2px;
                 left: 48.5%;
                 margin: 0px auto;
-                background-color: #4cb8ac;
+                background-color: $primary;
                 top: -40px;
             }
         }
@@ -270,10 +532,10 @@
     .viewmore {
         border-radius: 50px;
         background-color: #fff;
-        color: #4cb8ac;
+        color: $primary;
         margin: 60px auto 0;
         font-weight: bold;
-        border: 1px solid #4cb8ac;
+        border: 1px solid $primary;
         text-align: center;
         display: flex;
         align-items: center;
@@ -414,7 +676,7 @@
             height: 2px;
             left: 49%;
             right: auto;
-            background-color: #4cb8ac;
+            background-color: $primary;
             top: -25px;
         }
 
@@ -437,10 +699,10 @@
     .viewmore {
         border-radius: 50px;
         background-color: #fff;
-        color: #4cb8ac;
+        color: $primary;
         margin: 60px auto 0;
         font-weight: bold;
-        border: 1px solid #4cb8ac;
+        border: 1px solid $primary;
         text-align: center;
         display: flex;
         align-items: center;
@@ -487,7 +749,7 @@
             height: 2px;
             left: 49%;
             right: auto;
-            background-color: #4cb8ac;
+            background-color: $primary;
             top: -25px;
         }
 
@@ -510,10 +772,10 @@
     .viewmore {
         border-radius: 50px;
         background-color: #fff;
-        color: #4cb8ac;
+        color: $primary;
         margin: 60px auto 10px;
         font-weight: bold;
-        border: 1px solid #4cb8ac;
+        border: 1px solid $primary;
         text-align: center;
         display: flex;
         align-items: center;
@@ -684,20 +946,20 @@
     }
 
     .ally-btn {
-        border: solid 1px #4cb8ac;
+        border: solid 1px $primary;
         background-color: transparent;
-        color: #4cb8ac;
+        color: $primary;
     }
 
     .buttons {
         background: #fff;
-        color: #4cb8ac;
-        border: 1px solid #4cb8ac;
+        color: $primary;
+        border: 1px solid $primary;
 
         &:hover {
-            background: #4cb8ac;
+            background: $primary;
             color: #fff;
-            border: 1px solid #4cb8ac;
+            border: 1px solid $primary;
         }
     }
 }
@@ -746,7 +1008,7 @@
             left: auto;
             right: auto;
             // margin: 0px auto;
-            background-color: #4cb8ac;
+            background-color: $primary;
             top: -25px;
             margin-left: 82px;
         }
@@ -774,8 +1036,7 @@
     margin-top: 0;
     padding-bottom: 120px;
     position: relative;
-    background: linear-gradient(0deg, #2B999D 0%, #4CB8AC 100%);
-
+    background: #1890ff;
     .section-heading {
         margin-bottom: 30px;
     }
@@ -788,7 +1049,7 @@
     background-color: #FFFFFF;
     margin: 0 auto;
     display: block;
-    color: #4CB8AC;
+    color: $primary;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -874,5 +1135,180 @@
         margin: 0 7px;
         min-width: 325px;
         min-height: 384px;
+    }
+}
+
+.reviews_section {
+    background: linear-gradient(180deg, rgba(252, 251, 251, 1) 0%, #eef5fc 100%);
+    position: relative;
+}
+
+.reviews_outer_container {
+    background-color: #fff;
+    position: relative;
+    height: 168px;
+    width: 280px;
+    margin: 60px 30px 100px;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 14px;
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.review-box {
+    padding: 10px 0px 0;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        margin-right: 10px;
+        font-weight: 600;
+    }
+}
+
+.star-div {
+    .star_icon {
+        color: #ff951b;
+        margin: 4px 3px 0;
+        font-size: 20px;
+    }
+}
+.faq_section {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    background: #fff;
+
+    .faq-header {
+        &::after {
+            content: "";
+            position: absolute;
+            right: unset;
+            width: 502px;
+            height: 309.72px;
+            opacity: 0.1;
+            top: 45%;
+            background: linear-gradient(270deg, rgba(74, 144, 226, 0) 0%, #4A90E2 100%);
+            left: 0px;
+            clip-path: polygon(1% 20%, 78% 0, 78% 73%, 0 93%);
+            left: -54%;
+        }
+
+        h2 {
+            color: #13171F;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 47px;
+            margin-top: 20px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 3px;
+                left: auto;
+                right: auto;
+                margin: 0 auto;
+                background-color: $primary;
+                top: -26px;
+            }
+
+            span {
+                font-weight: bold;
+                display: block;
+            }
+        }
+    }
+}
+.box-section {
+    //padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: #fff;
+
+    .card {
+        height: 354px;
+        width: calc(100% - 40px);
+        border-radius: 4px;
+        background-color: #F5F7F9;
+        min-height: unset;
+        box-shadow: none;
+        margin-bottom: 40px;
+        padding: 0px;
+        border: none;
+
+        .card-body {
+            padding: 60px 40px 0 40px;
+
+            .falaya-description {
+                display: flex;
+                flex-direction: row;
+
+                .falaya-info {
+                    text-align: left;
+                    padding: 0px 40px 0px;
+
+                    span {
+                        color: $primary;
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        line-height: 20px;
+                        margin-bottom: 16px;
+                        display: block;
+                    }
+
+                    h3 {
+                        color: #13171F;
+                        font-size: 32px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 38px;
+                        margin-bottom: 28px;
+                    }
+
+                    p {
+                        color: #3B414D;
+                        font-size: 18px;
+                        letter-spacing: 0;
+                        line-height: 28px;
+                        margin: 0 0 40px 0;
+                    }
+                }
+            }
+
+            .button {
+                height: 50px;
+                width: auto;
+                border-radius: 50px;
+                background-color: transparent;
+                color: $primary;
+                margin: 0px;
+                border: 1px solid $primary;
+                text-align: center;
+                padding: 10px 50px;
+                outline: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                line-height: 19px;
+
+                &:hover {
+                    background-color: #ffffff;
+                }
+            }
+        }
     }
 }

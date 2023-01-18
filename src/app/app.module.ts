@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModuleModule } from './shared-module/shared-module.module';
 import { SHAREDZORROMODULESModule } from 'src/shared-zorro-modules/shared-zorro-modules.module';
+
 // import { FooterComponent } from './shared-module/footer/footer.component';
 
 

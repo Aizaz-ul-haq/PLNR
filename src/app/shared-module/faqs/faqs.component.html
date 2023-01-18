@@ -1,1 +1,133 @@
-<p>faqs works!</p>
+<section class="HomeBanner" role="img" aria-label="Buy page hero image">
+    <div nz-row>
+        <div nz-col nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+            <div nz-col nzSpan="12" [nzSm]="24" [nzXs]="24" [nzMd]="24">
+                <div class="banner-heading-top">
+                    <h1>Top Frequently <span> Asked Questions</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nz-tabset nzCentered class="faq_section">
+    <nz-tab nzTitle="Seller">
+        <section>
+            <div class="container">
+                <div nz-row>
+                    <div nz-col [nzLg]="{ span:24 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+                        <div>
+                            <h3>Listing My Home</h3>
+                        </div>
+
+                        <nz-collapse class="faq_collapsable">
+                            <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name"
+                                [nzActive]="panel.active" [nzDisabled]="panel.disabled"
+                                [nzExtra]="panel.active?extraTpl2:extraTpl" (nzActiveChange)="changePanel(panel)"
+                                [nzShowArrow]="false">
+                                <p style="margin:0;">
+                                    {{panel.answer}}
+                                </p>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                    </div>
+                    <div nz-col [nzLg]="{ span:24 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+                        <div>
+                            <h3>Selling My Home</h3>
+                        </div>
+
+                        <nz-collapse class="faq_collapsable">
+                            <nz-collapse-panel *ngFor="let panel of panels2" [nzHeader]="panel.name"
+                                [nzActive]="panel.active" [nzDisabled]="panel.disabled"
+                                [nzExtra]="panel.active?extraTpl2:extraTpl" (nzActiveChange)="changePanel(panel)"
+                                [nzShowArrow]="false">
+                                <p style="margin:0;">
+                                    {{panel.answer}}
+                                </p>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nz-tab>
+    <nz-tab nzTitle="Buyer">
+        <section class="faq_section">
+            <div class="container">
+                <div nz-row>
+                    <div nz-col [nzLg]="{ span:24 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+                        <div>
+                            <h3>Finding My Home</h3>
+                        </div>
+                        <nz-collapse class="faq_collapsable">
+                            <nz-collapse-panel *ngFor="let panel of buyerPanels1" [nzHeader]="panel.name"
+                                [nzActive]="panel.active" [nzDisabled]="panel.disabled"
+                                [nzExtra]="panel.active?extraTpl2:extraTpl" (nzActiveChange)="changePanel(panel)"
+                                [nzShowArrow]="false">
+                                <p style="margin:0;">
+                                    {{panel.answer}}
+                                </p>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                    </div>
+
+
+                    <div nz-col [nzLg]="{ span:24 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+                        <div>
+                            <h3>Buying My Home</h3>
+                        </div>
+                        <nz-collapse class="faq_collapsable">
+                            <nz-collapse-panel *ngFor="let panel of buyerPanels2" [nzHeader]="panel.name"
+                                [nzActive]="panel.active" [nzDisabled]="panel.disabled"
+                                [nzExtra]="panel.active?extraTpl2:extraTpl" (nzActiveChange)="changePanel(panel)"
+                                [nzShowArrow]="false">
+                                <p style="margin:0;">
+                                    {{panel.answer}}
+                                </p>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nz-tab>
+    <nz-tab nzTitle="General">
+        <section class="faq_section">
+            <div class="container">
+                <div nz-row>
+                    <div nz-col [nzLg]="{ span:24 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+                        <div>
+                            <h3>General</h3>
+                        </div>
+                        <nz-collapse class="faq_collapsable">
+                            <nz-collapse-panel *ngFor="let panel of generalPanels" [nzHeader]="panel.name"
+                                [nzActive]="panel.active" [nzDisabled]="panel.disabled"
+                                [nzExtra]="panel.active?extraTpl2:extraTpl" (nzActiveChange)="changePanel(panel)"
+                                [nzShowArrow]="false">
+                                <p style="margin:0;">
+                                    {{panel.answer}}
+                                </p>
+                            </nz-collapse-panel>
+                        </nz-collapse>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nz-tab>
+</nz-tabset>
+
+<div nz-row class="faq-bottom">
+    <div nz-col [nzLg]="{ span:24 , offset: 0 }" [nzXs]="{ span: 24, offset: 0}">
+        <h1>Still have questions</h1>
+        <p>Tell me what is it. Send an Email</p>
+    </div>
+</div>
+
+
+
+<ng-template #extraTpl>
+    <i nz-icon nzType="plus" nzTheme="outline"></i>
+</ng-template>
+<ng-template #extraTpl2>
+    <i nz-icon nzType="minus" nzTheme="outline"></i>
+</ng-template>
