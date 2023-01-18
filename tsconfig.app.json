@@ -6,8 +6,10 @@
     "types": []
   },
   "files": [
+    "node_modules/gsap/types/index.d.ts",
     "src/main.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    
   ],
   "include": [
     "src/**/*.d.ts"
