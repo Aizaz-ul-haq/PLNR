@@ -30,72 +30,42 @@
                 <a > FAQ </a>
             </li>
             <li nz-menu-item >
-                <a > Get in Touch</a>
+                <a > Services</a>
             </li>
             <li nz-menu-item >
-                <a > Services</a>
+                <a > Get in Touch</a>
             </li>
             <li nz-menu-item >
                 <a>Blog</a>
             </li>
           </ul>
         </div>
-        <div nz-col class="text-right" nzSpan="10">
-          <div class="mobile-signup">
-            <button nz-button nzType="default">
-              LOG IN
-            </button>
-          </div>
-          <div class="mobile-signup">
-            <ul
-              nz-menu
-              [nzMode]="'horizontal'"
-              class="mobile-dropdown"
-            >
-              <li>
-                <a id="sign_in">LOG IN</a>
-              </li>
-              <li>
-                <a id="sign_in">Sign Up</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="nav-top-right pull-right">
-            <li>
-              <a id="sign_in">Sign In</a>
-            </li>
-            <li>
-                <a id="sign_in">Sign Up</a>
-            </li>
-            
-           
-          </ul>
+        <div nz-col class="text-right" nzSpan="10"> 
+            <div class="nav-top-right">
+                <a>Sign IN</a>
+                <a>Sign UP</a>
+            </div>
+         
         </div>
       </div>
     </nz-header>
   
-    <!-- <div class="mobile-menu" [class.hide]="mobileNavToggle" *ngIf="isMobile || isTab">
+    <div class="mobile-menu">
       <nz-header>
         <div nz-row>
-          <div nz-col nzSpan="2">
-            <div class="close" (click)="toggleMobileNav()">
-              <img [src]="assetUrl + '/icons/ic-burger-close.svg'" alt="menu icon" />
-            </div>
-          </div>
-          <div nz-col nzSpan="12">
+          <div nz-col nzSpan="22">
             <a routerLink="/">
-              <img
-                class="menu-logo"
-                [src]="assetUrl + '/images/unlockd-logo.png'"
-                alt="Falaya-logo"
-                width="" height="" 
-              />
+            <img
+            class="menu-logo"
+              src="./assets/images/logo.png"
+              alt="logo"
+            />
             </a>
           </div>
-          <div nz-col nzSpan="8" *ngIf="!isLogin">
-            <button nz-button nzType="default" routerLink="/signup" id="sign_up_mobile">
-              SIGN UP
-            </button>
+          <div nz-col nzSpan="2">
+            <div class="close">
+                <img src="./assets/images/ic-burger-close.svg" alt="menu icon"/>
+            </div>
           </div>
         </div>
       </nz-header>
@@ -103,126 +73,62 @@
         <div nz-col nzSpan="24">
           <ul>
             <li
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/buy']"
-              (click)="navigated()"
-            >
-              Buy
+              routerLinkActive="active ant-menu-item-selected">
+            Home
             </li>
             <li
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/sell']"
-              (click)="navigated()"
-            >
-              Sell
-            </li>
-            <li 
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/features']"
-              (click)="navigated()"
-              >
-              Features
+              routerLinkActive="active ant-menu-item-selected">
+            Start Here
             </li>
             <li
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/pricing']"
-              (click)="navigated()"
-            >
-              Pricing
+            routerLinkActive="active ant-menu-item-selected">
+              FAQs
             </li>
             <li
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/comparison']"
-              (click)="navigated()"
-            >
-              Comparison
+            routerLinkActive="active ant-menu-item-selected">
+              Get in Touch
             </li>
             <li
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/about-us']"
-              (click)="navigated()"
-            >
-              About
+            routerLinkActive="active ant-menu-item-selected">
+              Services
             </li>
             <li
-              routerLinkActive="active ant-menu-item-selected"
-              (click)="toggleDropDown()"
-            >
-              Learn<i *ngIf="!showDropDown" nz-icon nzType="caret-down" nzTheme="outline" style="font-size:16px;margin-left:2px;margin-bottom:2px;"></i>
-              <i *ngIf="showDropDown" nz-icon nzType="caret-up" nzTheme="outline" style="font-size:16px;margin-left:2px;margin-bottom:2px;"></i>
+            routerLinkActive="active ant-menu-item-selected">
+              Blog
             </li>
-            <div *ngIf="showDropDown">
-              <li (click)="openBlog()">Articles</li>
-              <li (click)="faqs()">FAQs</li>
-              <li (click)="legalDocs()">Legal Documents</li>
-            </div>
           </ul>
         </div>
       </div>
-      <div nz-row *ngIf="!isLogin">
+      <div nz-row>
         <div nz-col nzSpan="10" nzOffset="1">
           <button
             nz-button
             nzType="default"
-            (click)="loginClicked()"
-            routerLink="/login"
-            [nzSize]=""
-            nzShape="round"
-            id="sign_in_mobile"
-          >
+            nzShape="round">
             SIGN IN
           </button>
         </div>
         <div nz-col nzSpan="10" nzOffset="2">
-          <button
+            <button
             nz-button
             nzType="default"
-            (click)="signupClicked()"
-            routerLink="/signup"
-            [nzSize]=""
-            nzShape="round"
-            id="sign_up_mobile"
-          >
+            nzShape="round">
             SIGN UP
           </button>
         </div>
       </div>
       <div nz-row>
-        <div nz-col nzSpan="22" nzOffset="1">
-          <button
-            class="property"
-            nz-button
-            nzType="default"
-            [nzSize]=""
-            nzShape="round"
-            (click)="listAPropertyPaymentClick()"
-            id="list_a_property"
-          >
-            LIST A PROPERTY
-          </button>
-        </div>
-      </div>
-      <div nz-row style="margin-left: 8px;">
         <div nz-col nzSpan="8" nzOffset="2">
-          
-          <a
-          id="download_app_apple"
-            href="https://apps.apple.com/us/app/falaya/id1551154057"
-            target="_blank"
-            >
-            <img [src]="assetUrl + '/images/apple.svg'" alt="apple logo" width="150" height="45" />
+          <a>
+            <img src="./assets/images/apple.svg" alt="menu icon"  width="150"/>
           </a>
         </div>
         <div nz-col nzSpan="8" nzOffset="2">
-          <a
-          id="download_app_google"
-          href="https://play.google.com/store/apps/details?id=com.falaya.app"
-          target="_blank"
-          >
-          <img [src]="assetUrl + '/images/android.svg'" alt="android logo" width="150" height="45" />
-          </a>
+            <a>
+                <img src="./assets/images/android.svg" alt="menu icon"  width="165"/>
+            </a>
         </div>
       </div>
-    </div> -->
+    </div> 
     
   </nz-layout>
