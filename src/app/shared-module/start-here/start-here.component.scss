@@ -1,0 +1,341 @@
+@import './../../../variables.scss';
+:host ::ng-deep {
+  .features-text-left {
+    padding: 0;
+    display: block;
+    .section-heading {
+      text-align: left;
+    }
+  }
+  .banner-search {
+    .ant-input {
+      border-radius: 4px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .feature_page{
+overflow-x: hidden;
+    }
+    .feature-body img {
+   
+      margin-left: -10px;
+      width: 98% !important;
+    }
+    .section_image.on-demand {
+      margin-left: -53px ;
+    }
+    .features-text-left {
+      padding: 0px;
+      display: block;
+      .section-heading {
+        text-align: center;
+      }
+    }
+    .home-section {
+      .calculation-form {
+        padding: 0 30px;
+      }
+    }
+  }
+}
+
+
+.home-section {
+  padding: 130px 0px;
+}
+.HomeBanner {
+    background-image: url('/assets/images/house.png');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    height: 450px;
+}
+.banner-heading-top {
+  padding: 147px 0px 44px 0px;
+
+  h1 {
+    font-size: 44px;
+    color: $white;
+    line-height: 52px;
+    font-weight: 300;
+  }
+  span {
+    font-weight: 700;
+  }
+
+  p.Listing-plans-start {
+    text-shadow: 0 1px 0 rgb(0 0 0 / 25%);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 26px
+  }
+
+  .Listing-plans-start2 {
+    display:block !important;
+    font-weight: normal !important;
+  }
+  .infographics{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        background-color: #214f76bd;
+        border-radius: 4px;
+        height: 100px;
+        width: 200px;
+        h2{
+            margin: 10px 0px 0px 0px;
+            color: #fff;
+            font-size: 14px;
+        }
+    &:nth-child(2){
+        background: #00bfffa6;
+    }
+    .count{
+        display: flex;
+    justify-content: center;
+    p{
+        margin: 0 10px 0 0px;
+        font-size: 45px;
+        text-align: center;
+    }
+    img{
+        height: 30px;
+        width: 40px;
+        margin: 20px 0px 20px 0px;
+        opacity: 0.5;
+    }
+    }
+    }
+  }
+}
+.center
+{
+  align-items: center;
+}
+.text-left{
+    text-align: left !important;
+}
+.feature-body{
+  padding-top: 120px;
+  background-color: #f9f9f9;
+    .main-section
+    {
+     padding-top: 73px;
+      .lighter{
+        position:relative;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            left: auto;
+            right: auto;
+            margin: 0px auto;
+            background-color: $primary;
+            top: -22px;
+          }
+        }   
+      h2 {
+        font-size: 40px;
+        color: black;
+        line-height: 52px;
+        font-weight: 300;
+        font-weight: 700;
+      }
+      
+    }
+    .hindi_btn{
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 12px 55px;
+        height: auto;
+        border-radius: 35px;
+        text-transform: uppercase;
+        border-color: #0898E1;
+        line-height: 22px;
+        background-color: transparent;
+        margin: 20px auto;
+        display: block;
+        color: #0898E1;
+    }
+    .contact-us-section{
+        h3{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 70px;
+        }
+        .contact-btn{
+            margin: 0 auto 20px;
+            display: block;
+            height: 42px;
+            background-color: #0898E1;
+            border-color: #0898E1;
+            font-size: 16px;
+            color: #fff;
+            width: auto;
+            text-transform: uppercase;
+        }
+    }
+}
+.mt-55
+{
+  margin-top: 55px;
+}
+.mt-100
+{
+  margin-top:100px !important;
+}
+@media (max-width: 480px) {
+  
+.inner-page-features { 
+  .features-text-left{
+    padding-left: 0px;
+  }
+}
+  .home-section {
+    padding: 60px 0px;
+  }
+  .save-section {
+    padding-bottom: 30px;
+    
+  }
+  .save-section.home-section {
+    position: relative;
+    .bg-layer {
+      background-color: #eff4f5;
+      position: absolute;
+      height: 545px;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .sell-footer-top {
+    padding: 20px 0;
+  }
+
+  .property-evalution-input-field {
+    min-width: 200px !important;
+  }
+  .HomeBanner {
+    // background-size: 100% 400px;
+    height: 400px;
+    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/features_hero_mask.jpg');
+  }
+
+  .ant-row {
+    flex-flow: column;
+  }
+
+  .banner-heading-top {
+    h1 {
+      font-size: 32px;
+
+      // span {
+      //   display: block;
+      // }
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+     .Listing-plans-start2
+     {
+      display: inline-block !important;
+  }
+  }
+  .feature-body .main-section{
+    h2{
+    font-size: 24px;
+  }
+ 
+}
+ 
+
+  .section-heading {
+    width: auto;
+  }
+
+  .sell-usage {
+    padding-top: 60px;
+
+    .inner-content {
+      padding: 20px 0px 20px 0px;
+    }
+  }
+
+  .banner-heading-top {
+    padding: 126px 0px 44px 0px;
+    h1 {
+      line-height: 38px;
+    }
+    p.Listing-plans-start {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .estimate-box{
+    width: 95%;
+    .ant-input-group-addon{
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  .sell-footer-top{
+    .line-heading{
+      h4{
+        font-size: 24px;margin: 0px 0px 15px 0px;
+      }
+    }
+  }
+  .estimate_section{
+    input{
+      padding-left: 15px;
+    }
+    button{
+      min-width: 120px;border-radius: 0 4px 4px 0;
+    }
+  } 
+
+
+.feature-body {
+    padding-top: 30px;
+    .main-section
+     {
+      padding-top: 54px;
+    }
+   .push_image
+    {
+
+      height: 293px;
+    }
+}
+.mt-20
+{
+    margin-top: 20px;
+}
+.mt-100
+{
+  margin-top: 0 !important;
+}
+  .center
+  {
+    align-items: normal;
+  }
+ 
+}
