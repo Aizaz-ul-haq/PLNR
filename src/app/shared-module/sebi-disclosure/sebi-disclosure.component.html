@@ -1,1 +1,151 @@
-<p>sebi-disclosure works!</p>
+
+<section class="HomeBanner">
+    <div nz-row>
+        <div nz-col nzSpan="24" [nzSm]="24" [nzXs]="24" [nzMd]="24">
+            <div class="banner-heading-top">
+                <h1>SEBI <span>Disclosures</span></h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-section inner-page-features pb-0">
+    <div class="container">
+        <div nz-row nzGutter="16">
+            <div nz-col nzSpan="24">
+                <div class="section-heading">
+                    <h3><span>SEBI Registration Details</span></h3>
+                </div>
+                <h3>RIA Name: Ajay Pruthi | RIA No: | Reg. Type: Indivdual | Validity : Perpetual| Reg. address: 29A, 63, Pocket -1, Sector
+                23, Rohini, New Delhi 110085 | Phone: 8860000332</h3>
+                <h3>Associated SEBI regional office: Plot No. C 4-A , G Block, SEBI Bhavan, Bandra Kurla Complex, Bandra East,. Mumbai –
+                400051</h3>
+                <div class="section-heading">
+                    <h3><span>Regulatory Complaints Disclosure</span></h3>
+                </div>
+                <h3>SEBI mandates all RIAs to display the complaints status on the website as shown below. Investors can first contact the
+                intermediary in case of complaints, in our case through the email info@insightful.in. The SEBI ‘SCORES’ website that
+                facilitates investors in logging any complaints against listed companies or intermediaries can be accessed here.</h3>
+            </div>
+        </div>
+        <div nz-row>
+            <div nz-col nzSpan="20" nzOffset="2">
+                <nz-card class="terms">
+                    <h2>Data as of last month ending : May 30, 2023</h2>
+                    <nz-table #basicTable [nzData]="listOfData" [nzFrontPagination]="false" >
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Received from</th>
+                                <th>Pending as of last month</th>
+                                <th>Received</th>
+                                <th>Resolved <sup>*</sup></th>
+                                <th>Total Pending #</th>
+                                <th>Pending > 3 Months</th>
+                                <th>Avg. Resolution Time^</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of basicTable.data; let i = index;"  >
+                                <td [nzAlign]="'center'">{{ i + 1 ==1? '':i }}</td>
+                                <td [nzAlign]="'center'">{{ data.received_from }}</td>
+                                <td [nzAlign]="'center'">{{ data.Pending_as_of_last_month }}</td>
+                                <td [nzAlign]="'center'">{{ data.received }}</td>
+                                <td [nzAlign]="'center'">{{ data.resolved }}</td>
+                                <td [nzAlign]="'center'">{{ data.total_pending }}</td>
+                                <td [nzAlign]="'center'">{{ data.pending_three_months }}</td>
+                                <td [nzAlign]="'center'">{{ data.avg_res_time }}</td>
+                            </tr>
+                        </tbody>
+                    </nz-table>
+
+                    <!-- .....Second Table.... -->
+                    <h2>Trend of monthly disposal of complaints</h2>
+                    <nz-table #monthly_trend_table [nzData]="monthly_trend" [nzFrontPagination]="false">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Month</th>
+                                <th>Carried fwd. from prev. month</th>
+                                <th>Received</th>
+                                <th>Resolved <sup>*</sup></th>
+                                <th>Pending #</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of monthly_trend_table.data; let i = index;">
+                                <td [nzAlign]="'center'">{{ i + 1 ==1? '':i }}</td>
+                                <td [nzAlign]="'center'">{{ data.month }}</td>
+                                <td [nzAlign]="'center'">{{ data.carried_fwd }}</td>
+                                <td [nzAlign]="'center'">{{ data.received }}</td>
+                                <td [nzAlign]="'center'">{{ data.resolved }}</td>
+                                <td [nzAlign]="'center'">{{ data.pending }}</td>
+                            </tr>
+                        </tbody>
+                    </nz-table>
+
+                    <!-- Second table ending -->
+
+                    <!-- Third Table -->
+                    <h2>Trend of annual disposal of complaints</h2>
+                    <nz-table #annual_trend_disposal [nzData]="annual_trend" [nzFrontPagination]="false">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Year</th>
+                                <th>Carried fwd. from prev. year</th>
+                                <th>Received</th>
+                                <th>Resolved <sup>*</sup></th>
+                                <th>Pending #</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of annual_trend_disposal.data; let i = index;">
+                                <td [nzAlign]="'center'">{{ i + 1 ==1? '':i }}</td>
+                                <td [nzAlign]="'center'">{{ data.year }}</td>
+                                <td [nzAlign]="'center'">{{ data.carried_fwd }}</td>
+                                <td [nzAlign]="'center'">{{ data.received }}</td>
+                                <td [nzAlign]="'center'">{{ data.resolved }}</td>
+                                <td [nzAlign]="'center'">{{ data.pending }}</td>
+                            </tr>
+                        </tbody>
+                    </nz-table>
+                    <p>*Inclusive of complaints of previous months/years resolved in the current month/year | ^Time in days | # Inclusive of
+                    complaints pending as on the last day of the month/year</p>
+                    <!-- Third Table Ending -->
+
+
+                    <!-- Last Table -->
+
+                    <h2>
+                    Disclosure with respect to compliance with Annual compliance audit requirement under Regulation 19(3) of SEBI (Investment
+                    Advisers) Regulations, 2013 for the previous and current financial year are as under:
+                    </h2>
+
+                    <nz-table #discs [nzData]="disclosures" [nzFrontPagination]="false">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Financial Year</th>
+                                <th>Compliance Audit Status</th>
+                                <th>Remarks, if any <sup>*</sup></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of discs.data; let i = index;">
+                                <td [nzAlign]="'center'">{{ data.key }}</td>
+                                <td [nzAlign]="'center'">{{ data.financial_year }}</td>
+                                <td [nzAlign]="'center'">{{ data.compliance_audit_status }}</td>
+                                <td [nzAlign]="'center'">{{ data.remarks }}</td>
+                            </tr>
+                        </tbody>
+                    </nz-table>
+
+
+
+                    <!-- Last Table Ending -->
+                </nz-card>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -100,7 +100,7 @@
             <h4>Client Corner</h4>
             <ul>
                 <li><a>Regulatory Disclosures</a></li>
-                <li><a>SEBI Disclosures</a></li>
+                <li><a (click)="openSEBIModal()">SEBI Disclosures</a></li>
                 <li><a>Investor Charter </a></li>
             </ul>
             
@@ -177,6 +177,13 @@
       </div>
     </div>
   </section>
+
+<ng-template #sayHelloTemplate>
+    <p>Arevuk Advisory Services Pvt Ltd (tradename: PLNR) is a SEBI Registered Investment Advisor (INA). SEBI
+    requires RIA's to disclose complaint status on their homepage. Pursuant to the same.</p>
+
+    <p>This modal closes in {{seconds}} seconds</p>
+</ng-template>
   
 
   

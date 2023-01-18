@@ -4,14 +4,14 @@
       class="header-top">
       <div nz-row nzGutter="16">
         <div nz-col nzSpan="14">
-          <div class="mobile-menu-icon">
-            <img src="./assets/images/ic-burger-menu.svg" alt="menu icon" />
+          <div class="mobile-menu-icon" *ngIf="isMobile && !isToggled" (click)="toggleMobileMenu()">
+            <img src="./../../../assets/images/ic-burger-menu.svg" alt="menu icon" />
           </div>
-          <div class="full-logo">
+          <div class="full-logo" >
             <img
               src="./assets/images/logo.png"
               alt="logo"
-              width="96" height="30" 
+              width="96" height="30"
             />
           </div>
   
@@ -24,19 +24,19 @@
               <a [routerLink]="['/']" routerLinkActive="router-link-active" > Home </a>
             </li>
             <li nz-menu-item >
-                <a > Start Here </a>
+                <a [routerLink]="['/start-here']"> Start Here </a>
             </li>
             <li nz-menu-item >
-                <a > FAQ </a>
+                <a [routerLink]="['/faqs']"> FAQ </a>
             </li>
             <li nz-menu-item >
-                <a > Services</a>
+                <a [routerLink]="['/services']"> Services</a>
             </li>
             <li nz-menu-item >
-                <a > Get in Touch</a>
+                <a [routerLink]="['/get-in-touch']"> Get in Touch</a>
             </li>
             <li nz-menu-item >
-                <a>Blog</a>
+                <a [routerLink]="['/blog']">Blog</a>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@
       </div>
     </nz-header>
   
-    <div class="mobile-menu">
+    <div class="mobile-menu" *ngIf="isMobile && isToggled">
       <nz-header>
         <div nz-row>
           <div nz-col nzSpan="22">
@@ -63,7 +63,7 @@
             </a>
           </div>
           <div nz-col nzSpan="2">
-            <div class="close">
+            <div class="close" (click)="closeMobileMenu()">
                 <img src="./assets/images/ic-burger-close.svg" alt="menu icon"/>
             </div>
           </div>
