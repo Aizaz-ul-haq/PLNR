@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeModuleComponent } from './home-module.component';
-// gsap.registerPlugin(ScrollTrigger);
-describe('HomeModuleComponent', () => {
-  let component: HomeModuleComponent;
-  let fixture: ComponentFixture<HomeModuleComponent>;
+import { StartHereComponent } from './start-here.component';
+
+describe('StartHereComponent', () => {
+  let component: StartHereComponent;
+  let fixture: ComponentFixture<StartHereComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeModuleComponent ]
+      declarations: [ StartHereComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeModuleComponent);
+    fixture = TestBed.createComponent(StartHereComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

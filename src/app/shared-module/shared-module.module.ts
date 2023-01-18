@@ -10,6 +10,9 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { InvestorCharterComponent } from './investor-charter/investor-charter.component';
 import { SHAREDZORROMODULESModule } from 'src/shared-zorro-modules/shared-zorro-modules.module';
+import { SectionHeadingComponent } from './section-heading/section-heading.component';
+import { StartHereComponent } from './start-here/start-here.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 
@@ -22,7 +25,10 @@ import { SHAREDZORROMODULESModule } from 'src/shared-zorro-modules/shared-zorro-
     PrivacyPolicyComponent,
     FaqsComponent,
     AboutUsComponent,
-    InvestorCharterComponent
+    InvestorCharterComponent,
+    SectionHeadingComponent,
+    StartHereComponent,
+    TestimonialsComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +39,9 @@ import { SHAREDZORROMODULESModule } from 'src/shared-zorro-modules/shared-zorro-
     FooterComponent,
     HomeModuleComponent,
     TopNavBarComponent,
-    SHAREDZORROMODULESModule
+    SHAREDZORROMODULESModule,
+    StartHereComponent,
+    TestimonialsComponent
     
   ]
 })

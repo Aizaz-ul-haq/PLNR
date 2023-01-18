@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    overflow-x: hidden;
+}
 .d-block {
     display: block !important;
+}
+.container {
+    width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
 }
