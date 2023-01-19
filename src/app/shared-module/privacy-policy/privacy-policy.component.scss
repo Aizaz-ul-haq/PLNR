@@ -1,0 +1,114 @@
+@import './../../../variables.scss';
+
+.HomeBanner {
+    // background-image: url("/assets/images/learn-screen.jpg");
+    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/sell-heroimage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    position: relative;
+    text-align: center;
+    height: 578px;
+
+    &:before {
+        background: rgba(19, 25, 45, 0.1);
+        content: ' ';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.banner-heading-top {
+    padding: 257px 0px 45px 0px;
+}
+
+.banner-heading-top h1 {
+    font-size: 42px;
+    color: $white;
+    font-weight: 300;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.section-heading {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 25px auto 30px;
+    width: 650px;
+
+    h3 {
+        font-size: 26px;
+        font-weight: 300;
+        color: $dark-text-clr;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        left: auto;
+        right: auto;
+        margin: 0px auto;
+        background-color: $primary;
+        top: -22px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: $dark-text-clr;
+        letter-spacing: -0.23px;
+    }
+}
+
+.terms.ant-card {
+    box-shadow: none;
+    border: none;
+}
+
+.terms {
+    padding: 70px 60px;
+    margin-bottom: 20px;
+
+    p {
+        font: 14.72px;
+        font-family: sans-serif;
+        color: #000000;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    h3 {
+        color: #000000;
+    }
+}
+.m-left{
+    margin-left:15px;
+}
+
+@media (max-width: 480px) {
+    .section-heading {
+        width: 100%;
+    }
+
+    .terms {
+        padding: 0;
+
+        p {
+            text-align: unset;
+        }
+    }
+
+}
