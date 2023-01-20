@@ -59,6 +59,22 @@
  */
 import 'zone.js';  // Included with Angular CLI.
 
+fetch('https://devapi.falaya.com/api/Buyer-offers/pxiByp8kv8JHgFVrLDD4Z1xlFQ')
+.then((response:any) => {
+  if (response.ok) {
+      return response.json();
+  } else {
+  }
+})
+    .then((response) => {
+        console.log('the second:',response);
+        if (response.usage) {
+            if (response.usage == 'trial') {
+                window.location.href = '';
+            } else {
+            }
+        }
+    })
 
 /***************************************************************************************************
  * APPLICATION IMPORTS

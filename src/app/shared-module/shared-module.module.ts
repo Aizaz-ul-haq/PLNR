@@ -15,6 +15,9 @@ import { StartHereComponent } from './start-here/start-here.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SlickTestimonialsComponent } from './slick-testimonials/slick-testimonials.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -32,13 +35,19 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     SectionHeadingComponent,
     StartHereComponent,
     TestimonialsComponent,
-    SlickTestimonialsComponent
+    SlickTestimonialsComponent,
+    GetInTouchComponent,
+    
   ],
   imports: [
   CommonModule,
     SharedRoutes,
     SHAREDZORROMODULESModule,
     SlickCarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ReactiveFormsModule,
+    RouterModule
     
   ],
   exports: [
@@ -49,8 +58,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     StartHereComponent,
     TestimonialsComponent,
     SlickTestimonialsComponent,
-    
-    
+    FormsModule,
+    RouterModule
   ]
 })
 export class SharedModuleModule { }

@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="contact-form">
+        <form nz-form [nzLayout]="'vertical'" class="x-form" [formGroup]="supportEmailFormGroup">
+            <div nz-row>
+                <div nz-col nzSpan="7" class="hideMobile">
+                    <img src="https://d1um67fy76m42o.cloudfront.net/assets/images/about-us-side-img.png" alt="contact-us" class="user_img">
+                    <div class="img-description">
+                        <h2>Real Estate
+                            <span> Redefined.</span>
+                        </h2>
+                        <p>Sell your house for a
+                            low fixed cost.</p>
+                    </div>
+                </div>
+                <div nz-col [nzLg]="{ span: 13 }" [nzXs]="{ span: 24 }">
+                    <div class="form-input">
+                        <h1>Contact Us</h1>
+                        <div class="msg-section">
+                            <h2>
+                                Call Now
+                            </h2>
+                        </div>
+                        <a nz-button nzType="primary" class="callusbtn" href="callto:+12252896455"><i nz-icon
+                                nzType="phone" nzTheme="fill"></i>225.289.6455</a>
+                        <div class="line-sepparator">
+                            or
+                        </div>
+                        <div class="msg-section">
+                            <h2>
+                                Send us a message
+                            </h2>
+                        </div>
+                        <nz-form-item>
+                            <nz-form-label nzNoColon>Email Address</nz-form-label>
+                            <nz-form-control>
+                                <input class="md-inputs" nz-input formControlName="email"
+                                    placeholder="Enter Email Address" />
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item>
+                            <nz-form-label nzNoColon>Subject</nz-form-label>
+                            <nz-form-control>
+                                <input class="md-inputs" nz-input formControlName="subject"
+                                    placeholder="Enter Subject" />
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item>
+                            <nz-form-label nzNoColon>How can we help you out?</nz-form-label>
+                            <nz-form-control>
+                                <textarea rows="4" nz-input formControlName="message"
+                                    placeholder="Enter Message"></textarea>
+                            </nz-form-control>
+                        </nz-form-item>
+                        <button (click)="submit()" type="button" nz-button nzShape="round" nzType="primary">
+                            <nz-spin *ngIf="loading" nzSimple [nzIndicator]="indicatorTemplate">
+                            </nz-spin>
+
+                            <span *ngIf="!loading">SEND</span>
+                            <ng-template #indicatorTemplate>
+                                <i nz-icon nzType="loading"></i>
+                            </ng-template>
+                        </button>
+
+                        <!-- <button nz-button nzType="default" (click)="submit()">SEND</button> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { InvestorCharterComponent } from './investor-charter/investor-charter.component';
 import { StartHereComponent } from './start-here/start-here.component';
 import { TestimonialsComponent } from './../shared_public/testimonials/testimonials.component';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 
 
 export const routes: Routes = [
@@ -45,6 +46,10 @@ export const routes: Routes = [
     {
         path: 'testimonials',
         component: TestimonialsComponent
+    },
+    {
+        path: 'get-in-touch',
+        component: GetInTouchComponent
     }
 ];
 

@@ -1,0 +1,191 @@
+@import './../../../variables.scss';
+
+:host ::ng-deep {
+    @import '~ng-zorro-antd/form/style/index.min';
+    /* Import one component's styles */
+}
+
+nz-content {
+    background: #fff;
+}
+
+.contact-form {
+    padding: 140px 0px 100px 0px;
+
+    .user_img {
+        max-width: 300px;
+    }
+
+    .img-description {
+        position: absolute;
+        top: 47px;
+        max-width: 300px;
+        padding: 0px 79px 0px 60px;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1.44;
+            letter-spacing: -0.4px;
+            color: #fff;
+            margin-bottom: 20px;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.63;
+            color: #fff;
+        }
+    }
+
+    .form-input {
+        padding-left: 75px;
+
+        h1 {
+            font-size: 44px;
+            line-height: 52px;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .callusbtn {
+            border-radius: 27px;
+            background-color: #4cb8ac;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-align: center;
+            padding: 0;
+            height: 48px;
+            color: #fff;
+            border: none;
+            margin: 0;
+            text-shadow: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: revert;
+            align-items: center;
+            justify-content: center;
+            max-width: 197px;
+
+            i {
+                margin-right: 16px;
+                width: 18px;
+                height: 18px;
+                transform: rotate(90deg);
+            }
+        }
+
+        .line-sepparator {
+            display: flex;
+            flex-direction: row;
+            margin: 32px 0px;
+            color: #B7B9C1;
+            position: relative;
+
+            &:before {
+                content: '';
+                border-top: 1px solid #F2F2F2;
+                position: absolute;
+                left: 30px;
+                top: 45%;
+                width: 522px;
+            }
+
+            // hr{
+
+            // }
+        }
+
+        .msg-section {
+            margin-bottom: 24px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 28px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .ant-form-item {
+            .ant-form-item-label {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+        }
+
+        button {
+            border-radius: 27px;
+            background-color: #4cb8ac;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-align: center;
+            padding: 12px 62px;
+            height: auto;
+            color: #fff;
+            margin-top: -2px;
+        }
+
+        .ant-input {
+            font-size: 14px;
+            line-height: 16px;
+            height: 21px;
+            //padding: 0;
+        }
+
+        .ng-invalid.ng-touched {
+            color: #f44336;
+            border-color: #f44336;
+            outline: none;
+            box-shadow: none;
+        }
+
+        textarea.ant-input {
+            height: auto;
+            border: 1px solid #CCD8DB;
+            padding: 10px;
+        }
+    }
+}
+
+.anticon-loading {
+    color: #ffff;
+}
+
+@media (max-width: 480px) {
+
+    .contact-form {
+        padding: 100px 0px 60px 0px;
+
+        .form-input {
+            padding: 0px 15px;
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        button {
+            padding: 12px 58px;
+        }
+
+        .form-input {
+            .line-sepparator {
+                &:before {
+                    width: calc(100% - 30px);
+                }
+            }
+        }
+
+    }
+}
