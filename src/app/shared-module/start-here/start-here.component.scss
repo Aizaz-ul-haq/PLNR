@@ -53,7 +53,7 @@ overflow-x: hidden;
     color: #fff;
     position: relative;
     text-align: center;
-    height: 450px;
+    height: 400px;
 }
 .banner-heading-top {
   padding: 147px 0px 44px 0px;
@@ -87,12 +87,12 @@ overflow-x: hidden;
     align-items: center;
     justify-content: center;
     .card{
-        background-color: #214f76bd;
-        border-radius: 4px;
-        height: 100px;
-        width: 200px;
+      background-color: #214f76bd;
+      border-radius: 4px;
+      height: 92px;
+      width: 185px;
         h2{
-            margin: 10px 0px 0px 0px;
+            margin: 7px 0px 0px 0px;
             color: #fff;
             font-size: 14px;
         }
@@ -103,15 +103,15 @@ overflow-x: hidden;
         display: flex;
     justify-content: center;
     p{
-        margin: 0 10px 0 0px;
-        font-size: 45px;
-        text-align: center;
+      margin: 0 6px 0 0px;
+      font-size: 42px;
+      text-align: center;
     }
     img{
         height: 30px;
         width: 40px;
         margin: 20px 0px 20px 0px;
-        opacity: 0.5;
+        opacity: 0.6;
     }
     }
     }

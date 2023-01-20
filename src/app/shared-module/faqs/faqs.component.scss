@@ -103,7 +103,7 @@
                 font-weight: 700;
                 color: #13171f;
                 margin-bottom: 24px;
-                padding-top: 80px;
+                // padding-top: 80px;
                 text-align: center;
             }
         }
@@ -141,15 +141,13 @@
 }
 
 .HomeBanner {
-    background-image: url('https://cms.falaya.com/wp-content/themes/blog/images/faq-heroimage.jpg');
-
+    background-image: url('/assets/images/faqs.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: $white;
     position: relative;
     text-align: center;
-    //height: 480px;
     height: 400px;
 }
 
