@@ -1,48 +1,37 @@
 <section class="sell-home">
     <div nz-row>
-        <div nz-col nz-col [nzXs]="{ span: 24, offset: 0 }" [nzMd]="{ span: 24, offset: 0 }"
-            [nzLg]="{ span: 10, offset: 2 }">
+        <div nz-col nz-col  [nzLg]="{ span:10 , offset: 2 }" [nzMd]="{ span: 10, offset: 2 }" [nzXs]="{ span: 24, offset: 0 }">
             <h1>Financial Planning <span class="d-block">Simplified</span> </h1>
             <p>Fee-Only | Flat Fixed Fee | No Product Selling | No Commission
                 <span>
                     Experience in handling <strong> 500+</strong> fee-only financial planning clients
                 </span>
-                <button nzbutton="" nztype="primary" nzsize="large" class="viewmore">LEARN
-                    MORE</button> <button nzbutton nztype="primary" nzsize="large" class="viewmore">sign up</button>
             </p>
+
+            <div class="button-group">
+                <button nz-button nzType="primary" nzsize="large" class="btn-primary">LEARN MORE</button> 
+                <button  nz-button nzType="primary" nzsize="large" class="btn-primary">Sign Up</button>
+            </div>
         </div>
-        <div nz-col [nzLg]="{ span:11 , offset: 1 }" [nzMd]="{ span: 24, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
+        <div nz-col [nzLg]="{ span:12 , offset: 0 }" [nzMd]="{ span: 12, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
             class="text-center">
-            <!-- <picture>
-                <source srcset="
-                      https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.webp 1x,
-                      https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.webp 2x"
-                    type="image/webp" />
-                <source srcset="
-                      https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
-                    type="image/svg" /> -->
-                <!-- <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/thumbnail.svg"
-                    class="sell-img" alt="home_illustration" /> -->
-                    <!-- <iframe src=""></iframe> -->
-                    <iframe src="https://www.youtube.com/embed/g9Aq1YtSo-o" title="Goal Planning" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen  class="sell-img"></iframe>
-            <!-- </picture> -->
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/g9Aq1YtSo-o" title="Goal Planning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
         </div>
     </div>
 </section>
 
-<section class="why_falaya">
+<section class="why_plnr">
     <div nz-row class="section-heading">
         <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}">
-            <div class="why_falaya_body">
+            <div class="why_plnr_body">
                 <h2>Why <strong>PLNR?</strong></h2>
-                <p>We believe that our success is measured by our client’s success.</p>
+                <p>We believe that our success is measured by our client's success.</p>
             </div>
         </div>
     </div>
 </section>
-<section class="falaya-card">
+<section class="plnr-card">
     <div nz-row>
         <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
             style="visibility:visible;position:sticky;">
@@ -50,7 +39,7 @@
                 <div class="card-body">
                     <h3>50% Less Fee</h3>
                     <p>We charge around 50% less fee that our counterparts in the financial industry.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/cost_control.svg" alt="cost_control" />
+                    <img src="./../../../assets/images/less-fee.svg" alt="img" />
                 </div>
             </div>
         </div>
@@ -60,7 +49,7 @@
                 <div class="card-body">
                     <h3>No Differential Fee</h3>
                     <p>No Differential fee is charged based on your residential status or net worth.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/max_exposure.svg" alt="max_exposure" />
+                    <img src="./../../../assets/images/diff-fee.svg" alt="img" />
                 </div>
             </div>
         </div>
@@ -70,7 +59,7 @@
                 <div class="card-body">
                     <h3>Seamless Onboarding</h3>
                     <p>We ensure seamless onboarding. No excel sheets, no signing contracts manually.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/keepup_task.svg" alt="max_exposure" />
+                    <img src="./../../../assets/images/onboarding.svg" alt="img" />
                 </div>
             </div>
         </div>
@@ -80,7 +69,7 @@
                 <div class="card-body">
                     <h3>Independent</h3>
                     <p>- Not affiliated with any bank, mutual fund, or insurance company.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/sign_doc.svg" alt="max_exposure" />
+                    <img src="./../../../assets/images/independent.svg" alt="img" />
                 </div>
             </div>
         </div>
@@ -90,8 +79,8 @@
                 <div class="card-body">
                     <h3>Fee-Only</h3>
                     <p>Compensated only with the fee clients pay directly, not earning commissions by any means.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/demand_support.svg" alt="max_exposure" />
-                </div>
+                    <img src="./../../../assets/images/money.svg" alt="img" />
+                 </div>
             </div>
         </div>
         <div nz-col [nzLg]="{ span:24 }" [nzMd]="{ span:24 }" [nzXs]="{ span: 24}" class="stacked-hide stacked-item"
@@ -100,8 +89,7 @@
                 <div class="card-body">
                     <h3>SEBI Registered</h3>
                     <p>We are registered with the Securities and Exchange Board of India (SEBI) as an Investment Advisor (INA).</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/demand_support.svg"
-                        alt="max_exposure" />
+                    <img src="./../../../assets/images/register.svg" alt="img" />
                 </div>
             </div>
         </div>
@@ -127,21 +115,21 @@
                 <div class="card-body">
                     <h3>Introduction</h3>
                     <p>We discuss our offerings to address your personalized financial planning needs.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/createlisting.svg" alt="create lisitng image" />
+                    <img src="./../../../assets/images/intro.svg" alt="img" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h3>Sign up</h3>
                     <p>We sign an agreement, conduct a compliance check, do risk profiling, and collect fees.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingslive.svg" alt="listing goes live" />
+                    <img src="./../../../assets/images/register.svg" alt="img" />
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h3>Data Collection</h3>
                     <p>We collect essential data and raise queries if any information is missing.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingcontract.svg" alt="go under contract" />
+                    <img src="./../../../assets/images/data-collection.svg" alt="img" />             
                 </div>
             </div>
             <div class="card">
@@ -149,23 +137,21 @@
                     <h3>Calculations</h3>
                     <p>We map your financial goals with existing resources and let you know the monthly investment required to achieve your
                     goals.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingclosing.svg" alt="close the deal" />
+                    <img src="./../../../assets/images/calculation.svg" alt="img" />       
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h3>Final Plan</h3>
                     <p>We share the financial plan with product recommendations after you approve the calculations.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingclosing.svg"
-                        alt="close the deal" />
+                    <img src="./../../../assets/images/final.svg" alt="img" />  
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h3>Implementation</h3>
                     <p>Finally, you start implementing the plan by yourself. We provide help if you face any problem in implementation.</p>
-                    <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/listingclosing.svg"
-                        alt="close the deal" />
+                    <img src="./../../../assets/images/done.svg" alt="img" />  
                 </div>
             </div>
         </div>
@@ -188,172 +174,46 @@
             </div>
         </div>
         <div nz-row>
-            <div class="mobile_scroll">
-                <div nz-col [nzXs]="{ span: 21, offset: 1 }" [nzMd]="{ span: 12, offset: 1 }"
-                    [nzLg]="{ span: 8, offset: 0 }">
-                    <div class="card">
-                        <div class="icon-img">
-                            <img class="list-img" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/icons/basic.svg" alt="basic" />
-                        </div>
-                        <h3>Basic</h3>
-                        <p>For Sale by Owner</p>
-                        <h2 class="price">$399</h2>
-                        <p class="price-des">one time fee</p>
-                        <button nz-button nzType="primary" class="buttons" >
-                            Get The Basic
-                        </button>
-                        <ul>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="MLS, Zillow, Realtor.com and more" />MLS, Zillow, Realtor.com and more
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Realtor Grade Signage" />Realtor Grade
-                                Signage
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Scheduling Software" />Scheduling
-                                Software
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="PaperWork Automation with E-sign" />PaperWork Automation with E-sign
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Push Button Purchase Agreement" />Push
-                                Button Purchase Agreement
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="All Legal Documents Available" />All
-                                Legal Documents Available
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="1 Year listing cancel anytime" />1 Year
-                                listing cancel anytime
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div nz-col [nzXs]="{ span: 20, offset: 1 }" [nzMd]="{ span: 12, offset: 0 }"
-                    [nzLg]="{ span: 8, offset: 0 }">
+                <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzMd]="{ span: 24, offset: 0 }"
+                    [nzLg]="{ span: 24, offset:0 }" class="mobile_scroll">
                     <div class="card best_value">
                         <p class="value_text">Best Value</p>
                         <div class="icon-img">
-                            <img class="list-img" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/icons/professional.svg" alt="professional" />
+                            <img class="list-img" src="./../../../assets/images/premium.svg" alt="professional" />
                         </div>
                         <h3>Professional</h3>
-                        <p>Agent services at a fair price</p>
-                        <h2>$399 + 1%</h2>
-                        <p class="price-des">of the sales price</p>
+                        <p>Flat Fixed Fee</p>
+                        <h2>Rs. 11,000</h2>
+                        <p class="price-des">per year</p>
                         <button nz-button nzType="primary" class="buttons">
                             Get The Professional
                         </button>
                         <ul>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Dedicated Real Estate Agents" />Dedicated Real Estate Agents
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Professional Photos" />Professional
-                                Photos
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Pricing Support" />Pricing
-                                Support
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Contract Negotiations" />Contract
-                                Negotiations
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Inspection Repair Negotiations" />Inspection Repair Negotiations
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Closing Support" />Closing
-                                Support
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="All Agents must maintain a 4.5 out of 5-star rating" />All Agents must maintain
-                                a 4.5 out of
-                                5-star rating
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="1 year cancel anytime" />1
-                                Year cancel
-                                anytime
-                            </li>
+                            <li>Risk Profiling</li>
+                            <li>Review of existing assets and liabilities</li>
+                            <li>Counselling for removing unproductive assets</li>
+                            <li>Assessment of Financial Goals (retirement, child education, housing, vacation, vehicle etc)</li>
+                            <li>Prioritization of Financial Goals</li>
+                            <li>Goal Affordability</li>
+                            <li>Goal-based Investment Advice</li> 
+                            <li>Customized Asset Allocation</li> 
+                            <li>Detailed Investment Plan (including mutual funds)</li> 
+                            <li>Investment in Mutual Fund Direct Plans</li> 
+                            <li>Review of Existing Life Insurance products (ULIPs/LIC etc)</li> 
+                            <li>Review of existing Health and Disability Insurance</li> 
+                            <li>Insurance Adequacy Assessment</li> 
+                            <li>Life/Health/Disability Insurance Strategy & Recommendation</li> 
+                            <li>Tax efficient products</li> 
+                            <li>Consultation for 1 year</li> 
+                            <li>Review after 6 months</li> 
+                            <li>Mode of Delivery: E-mail</li>
+                            <li>Estimated Delivery Time: 10-15 Days</li>
                         </ul>
+                        <small>We do not accept clients having net worth of more than 3 Crores.</small>
+                        <p class="net-worth"> Net Worth = Net Assets (other than self-occupied home) - Net Liabilities</p>
                     </div>
                 </div>
-                <div nz-col [nzXs]="{ span: 20, offset: 1 }" [nzMd]="{ span: 12, offset: 0 }"
-                    [nzLg]="{ span: 8, offset: 0 }">
-                    <div class="card" id="button-section">
-                        <div class="icon-img">
-                            <img class="list-img" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/icons/premium.svg" alt="premium" />
-                        </div>
-                        <h3>Premium</h3>
-                        <p>Full-Service Agent</p>
-                        <h2>$399 + 5%</h2>
-                        <p class="price-des">of sales price</p>
-                        <button nz-button nzType="primary" class="buttons">
-                            Get The Premium
-                        </button>
-                        <ul>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="All items from professional included" />All items from professional included
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Professional Video Shoot" />Professional
-                                Video Shoot
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Sponsored Social Media Ads" />Sponsored
-                                Social Media Ads
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="Targeted Google Ads" />Targeted Google
-                                Ads
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="In-person and virtual tours" />In-person
-                                and virtual tours
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg" alt="Open House" />Open
-                                House
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="All agents must maintain a 4.5  out of 5-star rating" />All agents must
-                                maintain a 4.5 out of
-                                5-star rating
-                            </li>
-                            <li>
-                                <img class="icon" src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/ic-available-1.svg"
-                                    alt="1 year listing cancel anytime" />1 year
-                                listing cancel anytime
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
@@ -362,7 +222,6 @@
     <div class="container">
         <app-section-heading [title]="'See our customer'" [isHomePage]="true"
             [spantitle]="'testimonials'"></app-section-heading>
-        <!-- <ng-template #TestimonialsHost></ng-template> -->
         <app-slick-testimonials [isFeaturesComponent]="true"></app-slick-testimonials>
     </div>
 </section>
@@ -426,9 +285,6 @@
 
 
 <section class="faq_section">
-    <!-- <div class="container">
-        <app-section-heading [title]="'Falaya'" [spantitle]="'FAQs'"></app-section-heading>
-    </div> -->
     <div class="container">
         <div nz-row>
             <div nz-col [nzLg]="{ span: 8, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }">
@@ -466,11 +322,11 @@
             <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
                 <div class="card">
                     <div class="card-body">
-                        <div class="falaya-description">
-                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/guide.svg" alt="cost_control" />
-                            <div class="falaya-info ">
+                        <div class="plnr-description">
+                            <img src="./../../../assets/images/blog.svg" alt="img" />
+                            <div class="plnr-info ">
                                 <span>DIY</span>
-                                <h3>Blog</h3>
+                                <h4>Blog</h4>
                                 <p>Extensive and in-depth collection of personal financial lessons.</p>
                             </div>
                         </div>
@@ -482,11 +338,10 @@
             <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
                 <div class="card">
                     <div class="card-body">
-                        <div class="falaya-description">
-                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/home.svg" alt="cost_control" />
-                            <div class="falaya-info ">
+                        <div class="plnr-description">
+                            <img src="./../../../assets/images/calculator.svg" alt="img" />                            <div class="plnr-info ">
                                 <span>DIY</span>
-                                <h3>Calculators</h3>
+                                <h4>Calculators</h4>
                                 <p>Free Financial calculators to make an informed decision.</p>
                             </div>
                         </div>
@@ -499,10 +354,9 @@
             <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
                 <div class="card">
                     <div class="card-body">
-                        <div class="falaya-description">
-                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/contact-falaya.svg" alt="cost_control" />
-                            <div class="falaya-info ">
-                                <h3>Contact PLNR</h3>
+                        <div class="plnr-description">
+                            <img src="./../../../assets/images/contact.svg" alt="img" />                              <div class="plnr-info ">
+                                <h4>Contact PLNR</h4>
                                 <p>Need more information about PLNR?</p>
                             </div>
                         </div>
@@ -514,10 +368,9 @@
             <div nz-col [nzLg]="{ span:12 }" [nzMd]="{ span:24}" [nzXs]="{ span: 24}">
                 <div class="card">
                     <div class="card-body">
-                        <div class="falaya-description">
-                            <img src="https://falaya-global-static-content.s3.us-east-2.amazonaws.com/assets/images/list-prop.svg" alt="cost_control" />
-                            <div class="falaya-info ">
-                                <h3>Sample financial plan</h3>
+                        <div class="plnr-description">
+                            <img src="./../../../assets/images/planning.svg" alt="img" />                                    <div class="plnr-info ">
+                                <h4>Sample financial plan</h4>
                                 <p>Check our financial plan to see how we promote simplicity.</p>
                             </div>
                         </div>

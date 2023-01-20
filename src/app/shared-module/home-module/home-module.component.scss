@@ -260,14 +260,14 @@
     }
 }
 .sell-home {
-    background-color: #EDF7F6;
+    background-color: #fff;
     padding-top: 180px;
     position: relative;
     padding-bottom: 60px;
     z-index:300;
 
     h1 {
-        color: #13171F;
+        color: #00bfff;
         font-size: 64px;
         line-height: 75px;
         font-weight: 800;
@@ -275,177 +275,60 @@
 
         span {
             font-weight: 400;
+            color: #13171F;
         }
     }
 
     p {
         color: #13171F;
         font-size: 18px;
-        line-height: 32px;
-        margin-bottom: 80px;
-
+        margin-bottom: 0;
+        font-weight: 700;
         span {
             display: block;
-
+            font-size: 16px;
+            font-weight: 400;
             strong {
                 text-decoration: underline;
+                color: #214f76;
             }
         }
     }
-
-    .sell-img {
-        width: 608px;
-        // margin-top: -18px;
-        height:250px;
-    }
-
-    .banner-search {
-        width: 100%;
-        margin: 40px auto 0px;
-        height: 64px;
-        border-radius: 6px;
-        box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-        padding: 0px;
-
-        nz-input-group {
-            width: calc(100% - 160px);
-            position: relative;
-            text-align: left;
-            padding: 0px;
-            border: none;
-            border-radius: 6px;
-
-            .ant-input {
-                border: none;
-                height: auto;
-                padding: 16px 30px 16px 60px;
-                line-height: 32px;
-                margin-bottom: 0px;
-                text-align: left;
-                border-radius: 0 0 0 4px;
-                width: 100%;
-            }
-
-            .ant-input-suffix {
-                background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/icons/location.png');
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                height: 16px;
-                width: 16px;
-                display: block;
-                right: auto;
-                position: absolute;
-                left: 24px;
-                top: 24px;
-
-                i {
-                    display: none;
-                }
-            }
-        }
-
-        .getStartedBtn {
+    .button-group{
+        margin-top: 20px;
+        .ant-btn{
             min-width: 160px;
-            height: 64px;
-            padding: 0px;
+            height: 50px;
+            padding: 0;
             border: none;
-            line-height: 64px;
-            border-radius: 0 4px 4px 0;
-            background-color: $primary;
+            border-radius: 4px;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
             letter-spacing: 1px;
-
-            &:focus,
-            &:hover {
-                background-color: $primary;
+            margin: 0 10px 0 0;
+        &:nth-child(2)
+        {
+            background-color: transparent !important;
+            color:  $btn-primary;
+            border:1px solid  $btn-primary !important;
+            &:hover{
+                color: $white;
+                background-color: $btn-primary !important;
             }
+        }
         }
     }
-
-    .watch-btn {
-        height: 80px;
-        width: 278px;
-        border: 1px solid $primary;
-        background-color: #FFFFFF;
-        box-shadow: 8px 20px 60px 0 rgb(0 0 0 / 8%);
-        color: $primary;
-        font-family: Roboto;
-        font-size: 18px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 24px;
-        margin: 0 auto;
-        position: absolute;
-        right: 0px;
-        left: 0px;
-        z-index: 1;
-        bottom: -42px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        transform: scale(0);
-        transition: all .2s;
-        cursor: pointer;
-
-        .watch-btn-inn {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-            }
-
-            img {
-                margin-right: 15px;
-            }
-        }
-
-        &:hover {
-            transform: translateY(-3px) !important;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
-            &:after {
-                transform: scaleX(1.2) scaleY(1.4);
-                opacity: 0;
-            }
-        }
-
-        &:active {
-            transform: translateY(-1px) !important;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        &:after {
-            content: "";
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            border-radius: 100px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all .4s;
-            background-color: #fff;
-        }
-    }
+   
 }
-.why_falaya {
+.why_plnr {
     padding: 242px 0px 160px 0;
     background-color: #214F76;
     clip-path: polygon(0 0%, 100% 0%, 100% 65%, 0% 100%);
     position: relative;
     height: 720px;
 
-    .why_falaya_body {
+    .why_plnr_body {
         margin-bottom: 60px;
 
         h2 {
@@ -459,12 +342,12 @@
             &::before {
                 content: "";
                 position: absolute;
-                width: 40px;
-                height: 2px;
-                left: 48.5%;
+                width: 80px;
+                height: 3px;
+                left: 46.5%;
                 margin: 0px auto;
                 background-color: $primary;
-                top: -40px;
+                top: -15px;
             }
         }
 
@@ -478,7 +361,8 @@
         }
     }
 }
-.falaya-card {
+
+.plnr-card {
     margin-top: -372px;
     padding-bottom: 120px;
     position: relative;
@@ -490,7 +374,7 @@
         width: 35%;
         right: 0;
         top: 115px;
-        background: linear-gradient(270deg, rgba(74, 144, 226, 0) 0%, #4A90E2 100%);
+        background: linear-gradient(270deg, rgba(74, 144, 226, 0) 0%, #00BFFF 100%);
         clip-path: polygon(0 45%, 100% 0, 100% 50%, 0% 100%);
         opacity: 0.5;
     }
@@ -500,7 +384,7 @@
         width: 760px;
         border-radius: 4px;
         background-color: #FFFFFF;
-        box-shadow: 8px 20px 60px 0 rgb(0 0 0 / 8%);
+        box-shadow: 4px 8px 60px 0 rgb(0 0 0 / 8%);
         margin: 0 auto;
         min-height: unset;
         margin-top: 80px;
@@ -526,16 +410,20 @@
                 text-align: center;
                 margin-bottom: 40px;
             }
+            img{
+                width: 240px;
+                 height: 200px;
+            }
         }
     }
 
     .viewmore {
         border-radius: 50px;
         background-color: #fff;
-        color: $primary;
+        color: $btn-primary;
         margin: 60px auto 0;
         font-weight: bold;
-        border: 1px solid $primary;
+        border: 1px solid $btn-primary;
         text-align: center;
         display: flex;
         align-items: center;
@@ -545,8 +433,6 @@
         width: auto;
         outline: none;
         cursor: pointer;
-        z-index: 1;
-        position: relative;
     }
 }
 .stacked-hide {
@@ -636,30 +522,12 @@
 }
 
 .how_it_works_title {
-    background-color: #F5F7F9;
+    background-color: #FFF;
     //padding-top: 154px;
     position: relative;
     padding-top: 318px;
     margin-top: -260px;
     z-index:-1;
-
-    // clip-path: polygon(0 0, 100% 0, 100% 78%, 0 99%);
-    // position: relative;
-    //  height: 200vh; 
-    &::before {
-        content: "";
-        position: absolute;
-        right: unset;
-        width: 502px;
-        height: 309.72px;
-        opacity: 0.1;
-        bottom: -250px;
-        background: linear-gradient(270deg, rgba(74, 144, 226, 0) 0%, #4A90E2 100%);
-        clip-path: polygon(1% 20%, 78% 0, 78% 73%, 0 93%);
-        left: 0;
-        z-index: 1;
-    }
-
     h2 {
         font-weight: 300;
         color: #13171f;
@@ -668,16 +536,15 @@
         letter-spacing: 0;
         line-height: 47px;
         text-align: center;
-
         &::before {
             content: "";
             position: absolute;
-            width: 40px;
-            height: 2px;
-            left: 49%;
-            right: auto;
+            width: 80px;
+            height: 3px;
+            left: 46.5%;
+            margin: 0px auto;
             background-color: $primary;
-            top: -25px;
+            top: -15px;
         }
 
         span {
@@ -699,10 +566,10 @@
     .viewmore {
         border-radius: 50px;
         background-color: #fff;
-        color: $primary;
+        color: $btn-primary;
         margin: 60px auto 0;
         font-weight: bold;
-        border: 1px solid $primary;
+        border: 1px solid $btn-primary;
         text-align: center;
         display: flex;
         align-items: center;
@@ -715,24 +582,10 @@
     }
 }
 .how_it_works {
-    background-color: #F5F7F9;
+    background-color: #FFF;
     padding-top: 115px !important;
     position: relative;
     min-height: 500px;
-
-    .curve_path {
-        content: " ";
-        clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-        margin-top: -410px;
-        height: 500px;
-        //background-color: #f9f9f9;
-        background-color: #ffffff;
-        position: relative;
-        bottom: -5px;
-    }
-
-
-
     h2 {
         font-weight: 300;
         color: #13171f;
@@ -772,10 +625,10 @@
     .viewmore {
         border-radius: 50px;
         background-color: #fff;
-        color: $primary;
-        margin: 60px auto 10px;
+        color: $btn-primary;
+        margin: 60px auto 0;
         font-weight: bold;
-        border: 1px solid $primary;
+        border: 1px solid $btn-primary;
         text-align: center;
         display: flex;
         align-items: center;
@@ -785,8 +638,6 @@
         width: auto;
         outline: none;
         cursor: pointer;
-        z-index: 1;
-        position: relative;
     }
 
     .cards_container {
@@ -883,6 +734,7 @@
     p {
         color: #3b414d;
         font-size: 14px;
+        margin-bottom: 0px;
     }
 
     .price-des {
@@ -899,29 +751,36 @@
         color: #13171f;
         line-height: 48px;
         margin-top: 26px;
+        margin-bottom: 0px;
     }
 
     ul {
-        list-style: none;
-        padding: 0px;
         text-align: left;
+        padding-left: 10px;
+        margin: 0;
 
         li {
             font-size: 14px;
             font-weight: normal;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
             color: black;
-            padding-left: 24px;
             position: relative;
-
-            .icon {
-                position: absolute;
-                left: 0px;
-                top: 2px;
-            }
         }
     }
-
+    small{
+        text-align: left;
+        display: block;    
+        font-weight: 700;
+        color: red;
+        line-height: 15px;
+        display: inline-block;
+    }
+    .net-worth{
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        margin: 9px 0px 0px;
+    }
     .icon-img {
         display: block;
         width: 80px;
@@ -932,17 +791,23 @@
         height: 100%;
         width: 100%;
     }
-
+    
     button {
         border-radius: 27px;
-        background-color: blue;
+        background-color: #fff !important;
         margin: 0px auto 30px;
         font-size: 14px;
         font-weight: bold;
-        color: #fff;
+        color: #0898E1 !important;
         letter-spacing: 1px;
         width: 100%;
         height: 48px;
+        border: 1px solid #0898E1 !important;
+        &:hover{
+            background-color: #0898E1 !important;
+            color:#fff !important;
+
+        }
     }
 
     .ally-btn {
@@ -969,7 +834,6 @@
 
 .pricing-sec.home-section {
     .bg-layer {
-        ///background-color: #f9f9f9;
         background-color: #ffffff;
         position: absolute;
         height: 752px;
@@ -983,7 +847,6 @@
 }
 .home-section.testimonial-section {
     position: relative;
-    //background: linear-gradient(180deg, #f5f7f9 0%, #fcfbfb 100%);
     background: linear-gradient(180deg, #ffffff 0%, #fcfbfb 100%);
     padding-top: 152px;
 }
@@ -1036,7 +899,7 @@
     margin-top: 0;
     padding-bottom: 120px;
     position: relative;
-    background: #1890ff;
+    background: #214F76;
     .section-heading {
         margin-bottom: 30px;
     }
@@ -1072,31 +935,21 @@
     }
 }
 .mobile_scroll {
-    display: flex;
-    margin-bottom: 40px;
-    margin-top: 40px;
-
     .card {
-        margin: 0px 26px 40px;
+        margin: 0px auto;
         background-color: #ffffffed;
-
-        &:first-child {
-            margin-left: 0;
-        }
-
         .buttons {
             margin-bottom: 64px;
         }
     }
-
     .best_value {
-        margin-top: -40px;
-        min-height: 720px;
+        // margin-top: -40px;
+        // min-height: 720px;
         padding-top: 70px;
         position: relative;
 
         .value_text {
-            background-image: url("https://d1um67fy76m42o.cloudfront.net/assets/images/curve_icon_orange.png");
+            background-image: url('/assets/images/curve_icon_blue.png');
             background-repeat: no-repeat;
             background-position: center top;
             border-radius: 0 6px 0 12px;
@@ -1118,7 +971,7 @@
     }
 }
 
-.falaya-card.how-works {
+.plnr-card.how-works {
     margin-top: -150px;
     padding: 0 15px;
 
@@ -1198,7 +1051,7 @@
             height: 309.72px;
             opacity: 0.1;
             top: 45%;
-            background: linear-gradient(270deg, rgba(74, 144, 226, 0) 0%, #4A90E2 100%);
+            background: linear-gradient(270deg, rgba(74, 144, 226, 0) 0%, #00bfff 100%);
             left: 0px;
             clip-path: polygon(1% 20%, 78% 0, 78% 73%, 0 93%);
             left: -54%;
@@ -1237,7 +1090,7 @@
     background: #fff;
 
     .card {
-        height: 354px;
+        height: 300px; 
         width: calc(100% - 40px);
         border-radius: 4px;
         background-color: #F5F7F9;
@@ -1250,11 +1103,11 @@
         .card-body {
             padding: 60px 40px 0 40px;
 
-            .falaya-description {
+            .plnr-description {
                 display: flex;
                 flex-direction: row;
 
-                .falaya-info {
+                .plnr-info {
                     text-align: left;
                     padding: 0px 40px 0px;
 
@@ -1264,22 +1117,22 @@
                         font-weight: 500;
                         letter-spacing: 1px;
                         line-height: 20px;
-                        margin-bottom: 16px;
+                        margin-bottom: 0px;
                         display: block;
                     }
 
-                    h3 {
+                    h4 {
                         color: #13171F;
-                        font-size: 32px;
+                        font-size: 24px;
                         font-weight: bold;
                         letter-spacing: 0;
                         line-height: 38px;
-                        margin-bottom: 28px;
+                        margin-bottom: 6px;
                     }
 
                     p {
                         color: #3B414D;
-                        font-size: 18px;
+                        font-size: 16px;
                         letter-spacing: 0;
                         line-height: 28px;
                         margin: 0 0 40px 0;
@@ -1304,10 +1157,10 @@
                 font-weight: bold;
                 letter-spacing: 1px;
                 line-height: 19px;
-
-                &:hover {
-                    background-color: #ffffff;
-                }
+            }
+            img{
+                width: 100px;
+                height: 98px;
             }
         }
     }

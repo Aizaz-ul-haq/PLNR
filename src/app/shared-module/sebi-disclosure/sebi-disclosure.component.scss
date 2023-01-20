@@ -1,28 +1,35 @@
 @import './../../../variables.scss';
+:host ::ng-deep {
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+        padding: 12px;
+        font-size: 13px;
+    }
+    .ant-table-thead>tr>th {
+        color: #3f3f3f;
+        background: #00bfff;
+        font-weight: 600;
+    }
+    .ant-table-tbody>tr>td {
+        border-bottom: 1px solid #dedede;
+    }
+}
+
 
 .HomeBanner {
     // background-image: url("/assets/images/learn-screen.jpg");
-    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/sell-heroimage.png');
+    background-image: url('/assets/images/agreement.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
     position: relative;
     text-align: center;
-    height: 578px;
-
-    &:before {
-        background: rgba(19, 25, 45, 0.1);
-        content: ' ';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
+    height: 400px;
+    background-position: center;
 }
 
 .banner-heading-top {
-    padding: 257px 0px 45px 0px;
+    padding: 180px 0px 45px 0px;
 }
 
 .banner-heading-top h1 {
@@ -37,32 +44,17 @@
 
 .section-heading {
     position: relative;
-    text-align: center;
     display: block;
-    margin: 25px auto 30px;
-    width: 650px;
+    margin: 30px auto 30px;
 
     h3 {
-        font-size: 26px;
-        font-weight: 300;
+        font-size: 24px;
         color: $dark-text-clr;
-        margin-bottom: 20px;
+        margin-bottom: 00px;
 
         span {
             font-weight: 500;
         }
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        left: auto;
-        right: auto;
-        margin: 0px auto;
-        background-color: $primary;
-        top: -22px;
     }
 
     p {
@@ -79,24 +71,19 @@
 }
 
 .terms {
-    padding: 70px 60px;
     margin-bottom: 20px;
-
+    h4{
+        font-size: 18px;
+    }
     p {
-        font: 14.72px;
-        font-family: sans-serif;
+        font: 14px;
         color: #000000;
-        text-align: justify;
         margin-top: 10px;
     }
 
     h3 {
         color: #000000;
     }
-}
-
-.m-left {
-    margin-left: 15px;
 }
 
 @media (max-width: 480px) {
