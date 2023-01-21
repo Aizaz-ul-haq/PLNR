@@ -8,25 +8,29 @@
 nz-content {
     background: #fff;
 }
+.mt-20{
+    margin-top: 20px !important;
+}
 
 .contact-form {
     padding: 140px 0px 100px 0px;
 
     .user_img {
-        max-width: 300px;
+        // max-width: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .img-description {
         position: absolute;
         top: 47px;
-        max-width: 300px;
-        padding: 0px 79px 0px 60px;
+        padding: 0px 50px 0px 60px;
 
         h2 {
             font-size: 32px;
             font-weight: 300;
             line-height: 1.44;
-            letter-spacing: -0.4px;
             color: #fff;
             margin-bottom: 20px;
 
@@ -41,90 +45,86 @@ nz-content {
             line-height: 1.63;
             color: #fff;
         }
+        .contact-info{
+            margin-top: 100px;
+            p{
+                span{
+                    font-weight: 500;
+                    display: block;
+                }
+            }
+        }
     }
 
     .form-input {
-        padding-left: 75px;
+        // padding-left: 75px;
 
         h1 {
-            font-size: 44px;
-            line-height: 52px;
-            font-weight: bold;
-            margin-bottom: 50px;
+            font-size: 14px;
         }
 
         .callusbtn {
             border-radius: 27px;
-            background-color: #4cb8ac;
+            background-color: #0898E1;
             font-size: 14px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
             text-align: center;
-            padding: 0;
             height: 48px;
             color: #fff;
             border: none;
-            margin: 0;
+            margin: 0 15px;
             text-shadow: none;
             box-shadow: none;
             display: flex;
-            flex-direction: revert;
             align-items: center;
             justify-content: center;
-            max-width: 197px;
+            width: 200px;
+            padding: 0;
 
             i {
-                margin-right: 16px;
-                width: 18px;
-                height: 18px;
+                width: 22px;
+                height: 22px;
                 transform: rotate(90deg);
             }
         }
 
         .line-sepparator {
-            display: flex;
-            flex-direction: row;
             margin: 32px 0px;
-            color: #B7B9C1;
+            color: #cacaca;
             position: relative;
 
             &:before {
                 content: '';
-                border-top: 1px solid #F2F2F2;
+                border-top: 1px solid #cacaca;
                 position: absolute;
-                left: 30px;
-                top: 45%;
+                left: 0;
+                top: -12px;
                 width: 522px;
             }
-
-            // hr{
-
-            // }
         }
 
         .msg-section {
-            margin-bottom: 24px;
-
+            margin: 24px 0;
+            display: flex;
+            align-items: end;
             h2 {
-                font-size: 24px;
-                font-weight: bold;
-                line-height: 28px;
-                margin-bottom: 30px;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 0;
             }
         }
 
         .ant-form-item {
             .ant-form-item-label {
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 14px;
                 font-weight: 500;
-                margin-bottom: 10px;
+                margin-bottom: 0;
             }
         }
 
         button {
             border-radius: 27px;
-            background-color: #4cb8ac;
+            background-color: #0898E1;
             font-size: 14px;
             font-weight: bold;
             letter-spacing: 1.5px;
@@ -137,9 +137,8 @@ nz-content {
 
         .ant-input {
             font-size: 14px;
-            line-height: 16px;
-            height: 21px;
-            //padding: 0;
+            height: 34px;
+            border-radius: 4px;
         }
 
         .ng-invalid.ng-touched {
@@ -164,16 +163,22 @@ nz-content {
 @media (max-width: 480px) {
 
     .contact-form {
-        padding: 100px 0px 60px 0px;
+        padding: 60px 0px 60px 0px;
 
         .form-input {
             padding: 0px 15px;
 
             h1 {
-                font-size: 24px;
+                font-size: 14px;
                 margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .msg-section
+            {
+                justify-content: space-between;
             }
         }
+
 
         button {
             padding: 12px 58px;

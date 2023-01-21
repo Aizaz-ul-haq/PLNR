@@ -55,8 +55,10 @@
     
 }
   @media (max-width: 480px) {
+    .HomeBanner{
+      background-position: center;
+    }
     .banner-heading-top {
-        padding: 126px 0px 44px 0px;
         h1 {
           line-height: 38px;
         }
@@ -65,4 +67,15 @@
           margin-bottom: 4px;
         }
       }
+      .testimonial_page{
+        overflow: hidden;
+        .testimonials{
+          .body{
+            padding: 30px;
+            max-width: 340px;
+            margin: 20px auto;
+        }
+        } 
+      }
+      
   }

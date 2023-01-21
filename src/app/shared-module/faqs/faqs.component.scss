@@ -25,12 +25,12 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                background-color: #f6fbfa;
+                background-color: #00BFFF ;
                 margin: 10px 0;
                 border-radius: 4px;
 
                 i {
-                    color: #0898E1;
+                    color: #FFF ;
                 }
             }
         }
@@ -42,7 +42,7 @@
                 font-weight: 600;
 
                 .ant-collapse-extra {
-                    background-color: #0898E1;
+                    background-color: #00BFFF ;
 
                     i {
                         color: #fff;
@@ -209,7 +209,7 @@
                 left: auto;
                 right: auto;
                 margin: 0 auto;
-                background-color: #0898E1;
+                background-color: #00BFFF ;
                 top: -26px;
             }
 
@@ -253,7 +253,7 @@
     }
 
     .banner-heading-top {
-        // padding: 180px 0px 120px 0px;
+        padding: 180px 50px 120px 50px;
 
         h1 {
             font-size: 32px;

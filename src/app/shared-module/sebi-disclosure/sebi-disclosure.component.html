@@ -1,7 +1,7 @@
 
 <section class="HomeBanner">
     <div nz-row>
-        <div nz-col nzSpan="24" [nzSm]="24" [nzXs]="24" [nzMd]="24">
+        <div nz-col [nzLg]="{ span: 24}" [nzXs]="{ span: 24 } " [nzMd]="{ span: 24 } ">
             <div class="banner-heading-top">
                 <h1>SEBI <span>Disclosures</span></h1>
             </div>
@@ -11,7 +11,7 @@
 <section class="home-section inner-page-features pb-0">
     <div class="container">
         <div nz-row nzGutter="16">
-            <div nz-col nzSpan="24">
+            <div  nz-col [nzLg]="{ span: 24}" [nzXs]="{ span: 24 } " [nzMd]="{ span: 24 } ">
                 <div class="section-heading">
                     <h3>SEBI Registration Details</h3>
                 </div>
@@ -29,9 +29,10 @@
             </div>
         </div>
         <div nz-row>
-            <div nz-col nzSpan="24">
+            <div nz-col [nzLg]="{ span: 24}" [nzXs]="{ span: 24 } " [nzMd]="{ span: 24 } ">
                 <nz-card class="terms">
                     <h4>Data as of last month ending : May 30, 2023</h4>
+                    <div class="table-responsive">
                     <nz-table #basicTable [nzData]="listOfData" [nzFrontPagination]="false" >
                         <thead>
                             <tr>
@@ -58,9 +59,10 @@
                             </tr>
                         </tbody>
                     </nz-table>
-
+                    </div>
                     <!-- .....Second Table.... -->
                     <h4>Trend of monthly disposal of complaints</h4>
+                    <div class="table-responsive">
                     <nz-table #monthly_trend_table [nzData]="monthly_trend" [nzFrontPagination]="false">
                         <thead>
                             <tr>
@@ -83,11 +85,12 @@
                             </tr>
                         </tbody>
                     </nz-table>
-
+                    </div>
                     <!-- Second table ending -->
 
                     <!-- Third Table -->
                     <h4>Trend of annual disposal of complaints</h4>
+                    <div class="table-responsive">
                     <nz-table #annual_trend_disposal [nzData]="annual_trend" [nzFrontPagination]="false">
                         <thead>
                             <tr>
@@ -110,6 +113,7 @@
                             </tr>
                         </tbody>
                     </nz-table>
+                    </div>
                     <strong class="text-center fs-12">*Inclusive of complaints of previous months/years resolved in the current month/year | ^Time in days | # Inclusive of
                     complaints pending as on the last day of the month/year.</strong>
                     <!-- Third Table Ending -->
@@ -121,7 +125,7 @@
                     Disclosure with respect to compliance with Annual compliance audit requirement under Regulation 19(3) of SEBI (Investment
                     Advisers) Regulations, 2013 for the previous and current financial year are as under:
                     </h4>
-
+                    <div class="table-responsive">
                     <nz-table #discs [nzData]="disclosures" [nzFrontPagination]="false">
                         <thead>
                             <tr>
@@ -140,7 +144,7 @@
                             </tr>
                         </tbody>
                     </nz-table>
-
+                    </div>
 
 
                     <!-- Last Table Ending -->
