@@ -10,6 +10,7 @@ import { InvestorCharterComponent } from './investor-charter/investor-charter.co
 import { StartHereComponent } from './start-here/start-here.component';
 import { TestimonialsComponent } from './../shared_public/testimonials/testimonials.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+import { ServicesComponent } from './services/services.component';
 
 
 export const routes: Routes = [
@@ -50,6 +51,10 @@ export const routes: Routes = [
     {
         path: 'get-in-touch',
         component: GetInTouchComponent
+    },
+    {
+        path: 'services',
+        component: ServicesComponent
     }
 ];
 
