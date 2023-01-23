@@ -38,6 +38,13 @@
      <section class="feature-body">
         <div class="container">
             <div nz-row>
+                <div *ngIf="isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}"
+                    [nzMd]="{ span: 10, offset: 2 }">
+                    <div class="main-section">
+                        <h2 class="lighter">Goal Planning </h2>
+                    </div>
+                </div>
+
                 <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 0}" [nzMd]="{ span: 12 , offset: 0}">
                     <iframe width="540" height="315" 
                     src="https://www.youtube.com/embed/g9Aq1YtSo-o" 
@@ -53,7 +60,7 @@
                     </button>
                    </div>
 
-                <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
+                <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
                     <div class="main-section">
                         <h2 class="lighter">Goal Planning </h2>
                     </div>
@@ -84,6 +91,12 @@
             </div>
            
             <div nz-row>
+                <div *ngIf="isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}"
+                    [nzMd]="{ span: 10, offset: 2 }">
+                    <div class="main-section">
+                        <h2 class="lighter">Expectations</h2>
+                    </div>
+                </div>
                 <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 0}" [nzMd]="{ span: 12 , offset: 0}">
                     <iframe width="540" height="315" 
                     src="https://www.youtube.com/embed/fYZ89_HZbGA"
@@ -99,7 +112,7 @@
                     </button>
                    </div>
 
-                <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
+                <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
                     <div class="main-section">
                         <h2 class="lighter">Expectations</h2>
                     </div>
@@ -131,6 +144,12 @@
             </div>
 
             <div nz-row>
+                <div *ngIf="isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}"
+                    [nzMd]="{ span: 10, offset: 2 }">
+                    <div class="main-section">
+                        <h2 class="lighter">Investment Philosophy</h2>
+                    </div>
+                </div>
                 <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 0}" [nzMd]="{ span: 12 , offset: 0}">
                     <iframe width="540" height="315" 
                     src="https://www.youtube.com/embed/lDJ1Cko6xes"
@@ -146,7 +165,7 @@
                     </button>
                    </div>
 
-                <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
+                <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
                     <div class="main-section">
                         <h2 class="lighter">Investment Philosophy</h2>
                     </div>
@@ -177,6 +196,12 @@
             </div>
 
             <div nz-row>
+                <div *ngIf="isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}"
+                    [nzMd]="{ span: 10, offset: 2 }">
+                    <div class="main-section">
+                        <h2 class="lighter">Clients</h2>
+                    </div>
+                </div>
                 <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 0}" [nzMd]="{ span: 12 , offset: 0}">
                     <iframe width="540" height="315" 
                     src="https://www.youtube.com/embed/K1TolQQjaK8"
@@ -192,7 +217,7 @@
                     </button>
                    </div>
 
-                <div nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
+                <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
                     <div class="main-section">
                         <h2 class="lighter">Clients</h2>
                     </div>

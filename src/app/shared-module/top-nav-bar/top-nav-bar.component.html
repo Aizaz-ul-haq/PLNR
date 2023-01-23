@@ -36,7 +36,7 @@
                 <a [routerLink]="['/get-in-touch']"> Get in Touch</a>
             </li>
             <li nz-menu-item >
-                <a [routerLink]="['/blog']">Blog</a>
+                <a href="https://www.plnr.in/blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -72,30 +72,30 @@
       <div nz-row>
         <div nz-col nzSpan="24">
           <ul>
-            <li
+            <li [routerLink]="['']"
               routerLinkActive="active ant-menu-item-selected">
             Home
             </li>
             <li  
               routerLinkActive="active ant-menu-item-selected"
-              routerLink="/start-here">
+              [routerLink]="['/start-here']">
             Start Here
             </li>
-            <li
+            <li [routerLink]="['/faqs']"
             routerLinkActive="active ant-menu-item-selected">
               FAQs
             </li>
-            <li
+            <li [routerLink]="['/get-in-touch']"
             routerLinkActive="active ant-menu-item-selected">
               Get in Touch
             </li>
-            <li
+            <li [routerLink]="['/services']"
             routerLinkActive="active ant-menu-item-selected">
               Services
             </li>
             <li
             routerLinkActive="active ant-menu-item-selected">
-              Blog
+            <a href="https://www.plnr.in/blog">Blog</a>
             </li>
           </ul>
         </div>

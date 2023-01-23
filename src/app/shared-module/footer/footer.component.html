@@ -71,10 +71,10 @@
         >
           <h4>About Us</h4>
           <ul>
-            <li><a>The Team</a></li>
-            <li><a>Testimonials</a></li>
-            <li><a>Terms & Conditions</a></li>
-            <li><a>Privacy Policy</a></li>
+            <li [routerLink]="['/about-us']" routerLinkActive="router-link-active" ><a>The Team</a></li>
+            <li [routerLink]="['/testimonials']" routerLinkActive="router-link-active" ><a>Testimonials</a></li>
+            <li [routerLink]="['/terms-and-conditions']" routerLinkActive="router-link-active" ><a>Terms & Conditions</a></li>
+            <li [routerLink]="['/privacy-policy']" routerLinkActive="router-link-active" ><a>Privacy Policy</a></li>
           </ul>
         </div> 
 
@@ -85,10 +85,10 @@
           >
             <h4>Learn More</h4>
             <ul>
-                <li><a>Blog</a></li>
+                <li><a href="plnr.in/blog">Blog</a></li>
                 <li><a>Calculators</a></li>
                 <li><a>Sample Financial Plan </a></li>
-                <li><a>Services</a></li>
+                <li [routerLink]="['/services']" routerLinkActive="router-link-active" ><a>Services</a></li>
               </ul>
           </div>
           <div
@@ -99,9 +99,9 @@
           >
             <h4>Client Corner</h4>
             <ul>
-                <li><a>Regulatory Disclosures</a></li>
-                <li><a (click)="openSEBIModal()">SEBI Disclosures</a></li>
-                <li><a>Investor Charter </a></li>
+                <li><a (click)="openSEBIModal()">Regulatory Disclosures</a></li>
+                <li [routerLink]="['/sebi-disclosure']" routerLinkActive="router-link-active" ><a>SEBI Disclosures</a></li>
+                <li [routerLink]="['/investor-charter']" routerLinkActive="router-link-active" ><a>Investor Charter </a></li>
             </ul>
             
           </div>
@@ -114,7 +114,7 @@
             <h4>Get in Touch</h4>
             <ul class="contact-list">
               <li>
-                <a><svg
+                <a hre="mailto:support@plnr.in"><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="17"
@@ -133,7 +133,7 @@
                 >
               </li>
               <li>
-                <a
+                <a href="callto:+918860000332"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
