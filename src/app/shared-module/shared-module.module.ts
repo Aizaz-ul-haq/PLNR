@@ -18,6 +18,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ServicesComponent } from './services/services.component';
 
 
 
@@ -37,6 +38,7 @@ import { RouterModule } from '@angular/router';
     TestimonialsComponent,
     SlickTestimonialsComponent,
     GetInTouchComponent,
+    ServicesComponent,
     
   ],
   imports: [

@@ -56,67 +56,59 @@ export class SlickTestimonialsComponent implements OnInit {
   };
   slidesTestimonials = [
     {
-      address: 'Baton Rouge, LA',
-      name: 'Anne Bynum',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Anne_Bynum.jpg',
-      message:
-        `I highly recommend Falaya as the new way to sell your home "by owner". My home sold in 24 hours for the asking price. Best $400 you could spend to sell your home.`,
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Baton Rouge, LA',
-      name: 'Terri Kring',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Terri_Kring.jpg',
-      message:
-        `My favorite part about selling my home myself was that we got to meet and get to know the people personally. This made it so much more enjoyable!`,
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Baton Rouge, LA',
-      name: 'Scott Barclay',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Scott_Barclay.jpg',
-      message:
-        "Great experience all around! Easy to use and efficient.",
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Baton Rouge, LA',
-      name: 'Jeanne Broussard',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Jeanne_Broussard.jpg',
-      message:
-        "Falaya made selling my home easy and stress free. They went above and beyond what is expected.",
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
 
     {
-      address: 'Geismar, LA',
-      name: 'Chris and Melissa Grill',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Chris_Grill_Pic_3.jpg',
-      message:
-        "We tried FSBO with no success. After listing with Falaya, we had a contract in two weeks and still saved $12,000 on commissions.",
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Baton Rouge, LA',
-      name: 'Wolfe Washauer',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Wolfe.jpg',
-      message:
-        'Falaya is fair priced, quick to respond, and easy to use. I highly recommend their services!',
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Baton Rouge, LA',
-      name: 'Kelly and Jami Smith',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Kelly.png',
-      message: "Falaya is easy to use and revolutionizing Real Estate",
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Denham Springs, LA',
-      name: 'Denise and Kevin Vernor',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Denise.png',
-      message:
-        "Falaya works. We got an offer in two weeks and saved $5,000 all in the middle of an epidemic.",
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
     {
-      address: 'Maurepas, LA',
-      name: 'Desiree Thomas',
-      img: 'https://d1um67fy76m42o.cloudfront.net/assets/images/testimonials/Desiree_Thomas.jpg',
-      message:
-        'Falaya made the processes so easy. Falaya instantly increased the amount of interest and ultimately saved us over $10,000.',
+      address: 'Mumbai',
+      name: 'John Doe',
+      img: 'assets/images/john.jpg',
+      message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at diam lorem. Morbi accumsan nulla sed nisl efficitur pretium.`,
     },
   ];
   constructor(@Inject(PLATFORM_ID) platformId:any) { 
