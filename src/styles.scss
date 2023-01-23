@@ -5,6 +5,11 @@ body{
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
+:host ::ng-deep {
+    .ant-modal-content{
+      border-radius: 8px;
+  }
+}
 .d-block {
     display: block !important;
 }

@@ -1,6 +1,8 @@
 @import './../../../variables.scss';
 
-
+.mt-50{
+    margin-top: 50px;
+}
 .HomeBanner {
     // background-image: url("/assets/images/learn-screen.jpg");
     background-image: url('/assets/images/about-us.png');
@@ -59,7 +61,7 @@
     h2 {
         font-size: 32px;
         font-weight: 300;
-        // margin-left: 190px;
+        text-align: center;
         position: relative;
         line-height: 38px;
 
@@ -79,7 +81,9 @@
             font-weight: 500;
         }
     }
-
+    p{
+        text-align: center;
+    }
     .team-image {
 
         width: 100%;

@@ -241,3 +241,33 @@
         }
     }
 }
+
+@media only screen and (max-width: 480px){
+    .pricing-sec {
+        margin-top: 0;
+        .bg-layer{
+            height: 980px !important;
+        }
+        .headings{
+            h2{
+                font-size: 32px;
+                line-height: 38px;
+                margin-bottom: 16px;
+            }
+            p{
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+        .card{
+            margin: 0 auto;
+            min-width: auto;
+            width: 300px;
+            padding: 50px 20px;
+            min-height: 715px;
+        }
+      
+    }
+}

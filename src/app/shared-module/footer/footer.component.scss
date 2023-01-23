@@ -1,5 +1,8 @@
 @import "../../../variables.scss";
 :host ::ng-deep {
+  .ant-modal-content {
+    border-radius: 8px;
+}
   .footer-listing{
   .ant-menu {
     background: transparent;

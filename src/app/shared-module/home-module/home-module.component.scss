@@ -1186,7 +1186,7 @@
             margin-bottom:20px ;
         }
         iframe{
-            width: 470px;
+            width: 100%;
         }
     }
     .why_plnr{
@@ -1330,6 +1330,23 @@
         .bg-layer{
             height: 980px !important;
         }
+        .card{
+            margin: 0;
+            min-width: auto;
+            width: 100%;
+            padding: 30px 20px;
+            min-height: 715px;
+            h3{
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .buttons{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
     }
     .testimonial-section {
       //padding-bottom: 150px;
@@ -1341,5 +1358,47 @@
         } 
       }
     }
-  
+    .box-section{
+        padding: 100px 15px 60px;
+        .card{
+            width: 100%;
+            margin: 15px auto 0;
+            min-height: auto;
+            height: 99%;
+            .card-body{
+                 .plnr-description{
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        height: 80px;
+                        width: 80px;
+                    }
+                    .plnr-info{
+                        padding: 24px 0 0;
+                        span{
+                            display: block;
+                        }
+                        p{
+                            margin: 0 0 20px 0;
+                        }
+                    }
+                 }
+                 button{
+                    width: 202px;
+                    padding: 0;
+                    float: left;
+                }
+            }
+        }
+    }
+    .faq_section {
+        padding-left: 20px;
+        padding-right: 20px;
+        &:before{
+            content: '';
+            display: none;
+        }
+    }
   }
+
+
