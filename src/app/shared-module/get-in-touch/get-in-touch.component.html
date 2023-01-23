@@ -2,34 +2,47 @@
     <div class="contact-form">
         <form nz-form [nzLayout]="'vertical'" class="x-form" [formGroup]="supportEmailFormGroup">
             <div nz-row>
-                <div nz-col nzSpan="7" class="hideMobile">
-                    <img src="https://d1um67fy76m42o.cloudfront.net/assets/images/about-us-side-img.png" alt="contact-us" class="user_img">
+                <div nz-col [nzLg]="{ span: 7, offset:1 }" [nzXs]="{ span: 24 }" class="hideMobile">
+                    <img src="./../../../assets/images/contact-us.png" alt="contact-us" class="user_img">
                     <div class="img-description">
                         <h2>Real Estate
                             <span> Redefined.</span>
                         </h2>
                         <p>Sell your house for a
                             low fixed cost.</p>
+
+                            <div class="contact-info" >
+                                <p>Call Us: <span>+91 8860000332</span></p>
+                                <p>Email Address: <span>support@plnr.in</span></p>
+                                <p>Address:  <span> 63, Pocket-1, Sector-23, Rohini, New Delhi -85</span></p>
+                            </div>
                     </div>
+                
                 </div>
-                <div nz-col [nzLg]="{ span: 13 }" [nzXs]="{ span: 24 }">
+                <div nz-col [nzLg]="{ span: 13, offset:1 }" [nzXs]="{ span: 24 }">
                     <div class="form-input">
-                        <h1>Contact Us</h1>
+                        <h1>Before you decide about engaging with us, you can have a no-obligation introductory call with us, to learn more about how we can help you</h1>
                         <div class="msg-section">
-                            <h2>
-                                Call Now
-                            </h2>
+                            <h2>Call Now</h2>
+                            <a nz-button nzType="primary" class="callusbtn" href="callto:+12252896455"><i nz-icon
+                                nzType="phone" nzTheme="fill"></i> +91 8860000332</a>
                         </div>
-                        <a nz-button nzType="primary" class="callusbtn" href="callto:+12252896455"><i nz-icon
-                                nzType="phone" nzTheme="fill"></i>225.289.6455</a>
+                        
                         <div class="line-sepparator">
-                            or
+                            For all the basic information about the services offered and the fees, please refer to the Services page.
                         </div>
                         <div class="msg-section">
                             <h2>
                                 Send us a message
                             </h2>
                         </div>
+                        <nz-form-item>
+                            <nz-form-label nzNoColon>Name</nz-form-label>
+                            <nz-form-control>
+                                <input class="md-inputs" nz-input formControlName="name"
+                                    placeholder="Enter Name" />
+                            </nz-form-control>
+                        </nz-form-item>
                         <nz-form-item>
                             <nz-form-label nzNoColon>Email Address</nz-form-label>
                             <nz-form-control>

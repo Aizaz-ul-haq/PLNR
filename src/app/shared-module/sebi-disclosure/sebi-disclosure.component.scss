@@ -13,6 +13,14 @@
     .ant-table-tbody>tr>td {
         border-bottom: 1px solid #dedede;
     }
+
+    // @media (max-width: 480px) {
+    //     .ant-table-wrapper {
+    //         max-width: 380px;
+    //         overflow: auto;
+    //     }
+    // }
+   
 }
 
 
@@ -90,13 +98,20 @@
     .section-heading {
         width: 100%;
     }
-
+    .banner-heading-top{
+        font-size: 32px;
+        line-height: 32px;
+    }
     .terms {
         padding: 0;
 
         p {
             text-align: unset;
         }
+    }
+    .table-responsive{
+        max-width: 250px;
+        overflow-x: auto;
     }
 
 }

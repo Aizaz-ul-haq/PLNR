@@ -126,7 +126,7 @@ overflow-x: hidden;
 }
 .feature-body{
   padding-top: 120px;
-  background-color: #f9f9f9;
+  background-color: #fff;
     .main-section
     {
      padding-top: 73px;
@@ -198,55 +198,54 @@ overflow-x: hidden;
   margin-top:100px !important;
 }
 @media (max-width: 480px) {
-  
-.inner-page-features { 
-  .features-text-left{
-    padding-left: 0px;
+
+  .feature_page{
+    .HomeBanner{
+      background-position: 63% 100%;
+      background-repeat: no-repeat;
+    }
+    .infographics{
+      .card {
+        width: unset;
+        h2{
+          margin: 7px 13px 0px 13px;
+          color: #fff;
+          font-size: 12px;
+          max-width: 99px;
+          text-align: center;
+        }
+        .count{
+          p{
+            font-size: 32px;
+        }
+        img {
+          height: 25px;
+          width: 30px;
+          margin: 13px 0px 20px 0px;
+      }
+        }
+    }
+    }
   }
+  .feature-body{
+    iframe{
+      width: 100%;
+    }
+    .main-section{
+      .lighter {
+        position: relative;
+        text-align: left;
+        padding: 0 10px;
+    }
+    }
 }
   .home-section {
     padding: 60px 0px;
   }
-  .save-section {
-    padding-bottom: 30px;
-    
-  }
-  .save-section.home-section {
-    position: relative;
-    .bg-layer {
-      background-color: #eff4f5;
-      position: absolute;
-      height: 545px;
-      width: 100%;
-      top: 0px;
-      left: 0px;
-    }
-  }
-
-  .sell-footer-top {
-    padding: 20px 0;
-  }
-
-  .property-evalution-input-field {
-    min-width: 200px !important;
-  }
-  .HomeBanner {
-    // background-size: 100% 400px;
-    height: 400px;
-    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/features_hero_mask.jpg');
-  }
-
-  .ant-row {
-    flex-flow: column;
-  }
-
+ 
   .banner-heading-top {
     h1 {
       font-size: 32px;
-
-      // span {
-      //   display: block;
-      // }
     }
 
     p {
@@ -258,25 +257,14 @@ overflow-x: hidden;
       display: inline-block !important;
   }
   }
-  .feature-body .main-section{
-    h2{
-    font-size: 24px;
-  }
- 
-}
+
  
 
   .section-heading {
     width: auto;
   }
 
-  .sell-usage {
-    padding-top: 60px;
 
-    .inner-content {
-      padding: 20px 0px 20px 0px;
-    }
-  }
 
   .banner-heading-top {
     padding: 126px 0px 44px 0px;
@@ -289,41 +277,7 @@ overflow-x: hidden;
     }
   }
 
-  .estimate-box{
-    width: 95%;
-    .ant-input-group-addon{
-      border-radius: 0 4px 4px 0;
-    }
-  }
-  .sell-footer-top{
-    .line-heading{
-      h4{
-        font-size: 24px;margin: 0px 0px 15px 0px;
-      }
-    }
-  }
-  .estimate_section{
-    input{
-      padding-left: 15px;
-    }
-    button{
-      min-width: 120px;border-radius: 0 4px 4px 0;
-    }
-  } 
 
-
-.feature-body {
-    padding-top: 30px;
-    .main-section
-     {
-      padding-top: 54px;
-    }
-   .push_image
-    {
-
-      height: 293px;
-    }
-}
 .mt-20
 {
     margin-top: 20px;
