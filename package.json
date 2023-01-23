@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.0",
+    "@angular-devkit/core": "^15.1.2",
     "@angular/cli": "~12.2.0",
     "@angular/compiler-cli": "~12.2.0",
     "@types/gsap": "^3.0.0",
