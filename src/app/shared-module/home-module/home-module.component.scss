@@ -992,7 +992,7 @@
 }
 
 .reviews_section {
-    background: linear-gradient(180deg, rgba(252, 251, 251, 1) 0%, #eef5fc 100%);
+    background: linear-gradient(180deg, #fcfbfb 0%, #f3f3f3 100%);
     position: relative;
 }
 
@@ -1000,7 +1000,7 @@
     background-color: #fff;
     position: relative;
     height: 168px;
-    width: 280px;
+    // width: 280px;
     margin: 60px 30px 100px;
     border-radius: 6px;
     box-shadow: 0 10px 20px -10px rgb(0 0 0 / 12%);
@@ -1027,6 +1027,7 @@
     h2 {
         margin-right: 10px;
         font-weight: 600;
+        margin-bottom: 0px;
     }
 }
 
@@ -1165,3 +1166,180 @@
         }
     }
 }
+
+@media only screen and (max-width: 480px) { 
+
+    .sell-home {
+        padding: 120px 15px 92px;
+        h1{
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 49px;
+        }
+        .button-group{
+            display: flex;
+            margin-bottom:20px ;
+        }
+        iframe{
+            width: 470px;
+        }
+    }
+    .why_plnr{
+        padding: 136px 0 160px;
+        height: 480px;
+        -webkit-clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
+         clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
+         .why_falaya_body
+         {
+            margin-bottom: 0;
+            h2
+            {
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+        .plnr-card{
+        padding-bottom: 60px;
+        overflow-x: hidden;
+        margin-top: -291px;
+        .card{
+            height: 364px;
+            width: 345px;
+            margin-top: 89px;
+            .card-body{
+                padding: 32px 30px;
+                h3{
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin-bottom: 12px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+                img{
+                    height: unset;
+                    max-width: 200px;
+                }
+                
+            }
+        }
+        }
+
+
+
+    .how_it_works_title{
+        padding-bottom: 0!important;
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        -webkit-clip-path: unset;
+        clip-path: unset;
+        margin-top: -900px;
+        padding-top: 1008px!important;
+        h2{
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 16px;
+            &:before{
+                content: "";
+                top: -25px;
+                left: 43%;
+            }
+        }
+        p{
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
+    }
+    .how_it_works {
+        padding: 30px 0 40px!important;
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        -webkit-clip-path: unset;
+        clip-path: unset;
+        transform: none!important;
+        position: relative!important;
+        height: auto!important;
+        .cards_container{
+            .cards {
+                width: 100%;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                .card
+                {
+                    width: calc(100% - 20px);
+                    min-width: 320px;
+                    transform: none!important;
+                    position: relative;
+                    left: unset;
+                    padding: 32px 30px;
+                    margin: 0 7.5px;
+                    max-height: unset!important;
+                    min-height: 397px!important;
+                    height: unset!important;
+                    box-shadow: 8px 20px 40px 0 rgb(0 0 0 / 2%);
+                    &:first-child{
+                        margin-left: 15px;
+                    }
+                }
+                .card-body{
+                    margin: 0;
+                    h3{
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin-bottom: 12px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 28px;
+                    }
+                    img{
+                        max-width: 200px;
+                    }
+                }
+            
+            }
+        } 
+        .viewmore{
+            margin: 20px auto 0;
+        }
+    }
+    .pricing-sec {
+        margin-top: -332px;
+        padding: 413px 0 60px;
+        .bg-layer{
+            height: 980px !important;
+        }
+    }
+    .testimonial-section {
+      //padding-bottom: 150px;
+      padding-bottom: 93px;
+      padding-top: 80px;
+      .testimonial_img{
+        img{  
+          min-height: 93px; 
+        } 
+      }
+    }
+  
+  }
