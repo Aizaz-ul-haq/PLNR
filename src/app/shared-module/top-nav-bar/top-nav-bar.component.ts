@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-top-nav-bar',
@@ -10,7 +12,7 @@ export class TopNavBarComponent implements OnInit {
   isMobile: boolean = false;
   isTab: boolean = false;
   isToggled: boolean = false;
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     this.checkMobile();
@@ -42,6 +44,11 @@ export class TopNavBarComponent implements OnInit {
     this.isToggled = false;
     console.log('what is happening; After: ', this.isToggled)
 
+  }
+
+  closeMenu(route:string) {
+    this.isToggled = false;
+    this.router.navigate([`/${route}`]);
   }
 
 }

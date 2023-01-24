@@ -11,6 +11,7 @@ import { StartHereComponent } from './start-here/start-here.component';
 import { TestimonialsComponent } from './../shared_public/testimonials/testimonials.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { ServicesComponent } from './services/services.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 
 export const routes: Routes = [
@@ -55,6 +56,10 @@ export const routes: Routes = [
     {
         path: 'services',
         component: ServicesComponent
+    },
+    {
+        path: 'terms-and-conditions',
+        component: TermsAndConditionsComponent
     }
 ];
 

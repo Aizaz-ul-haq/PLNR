@@ -19,6 +19,7 @@ import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ServicesComponent } from './services/services.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 
 
@@ -39,6 +40,7 @@ import { ServicesComponent } from './services/services.component';
     SlickTestimonialsComponent,
     GetInTouchComponent,
     ServicesComponent,
+    TermsAndConditionsComponent,
     
   ],
   imports: [

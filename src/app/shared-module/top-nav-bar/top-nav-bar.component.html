@@ -5,11 +5,12 @@
       <div nz-row nzGutter="16">
         <div nz-col nzSpan="14">
           <div class="mobile-menu-icon" *ngIf="isMobile && !isToggled" (click)="toggleMobileMenu()">
-            <img src="./../../../assets/images/ic-burger-menu.svg" alt="menu icon" />
+            <img src="assets/images/ic-burger-menu.svg" alt="menu icon" />
           </div>
           <div class="full-logo" >
             <img
-              src="./assets/images/logo.png"
+              (click)="closeMenu('')"
+              src="assets/images/logo.png"
               alt="logo"
               width="96" height="30"
             />
@@ -23,8 +24,8 @@
             <li nz-menu-item >
               <a [routerLink]="['/']" routerLinkActive="router-link-active" > Home </a>
             </li>
-            <li nz-menu-item >
-                <a [routerLink]="['/start-here']"> Start Here </a>
+            <li nz-menu-item  >
+                <a> Start Here </a>
             </li>
             <li nz-menu-item >
                 <a [routerLink]="['/faqs']"> FAQ </a>
@@ -54,17 +55,17 @@
       <nz-header>
         <div nz-row>
           <div nz-col nzSpan="22">
-            <a routerLink="/">
+            <a (click)="closeMenu('')">
             <img
             class="menu-logo"
-              src="./assets/images/logo.png"
+              src="assets/images/logo.png"
               alt="logo"
             />
             </a>
           </div>
           <div nz-col nzSpan="2">
             <div class="close" (click)="closeMobileMenu()">
-                <img src="./assets/images/ic-burger-close.svg" alt="menu icon"/>
+                <img src="assets/images/ic-burger-close.svg" alt="menu icon"/>
             </div>
           </div>
         </div>
@@ -72,29 +73,34 @@
       <div nz-row>
         <div nz-col nzSpan="24">
           <ul>
-            <li [routerLink]="['']"
-              routerLinkActive="active ant-menu-item-selected">
+            <li 
+            (click)="closeMenu('')"
+              routerLinkActive="ant-menu-item-selected">
             Home
             </li>
             <li  
-              routerLinkActive="active ant-menu-item-selected"
-              [routerLink]="['/start-here']">
+              routerLinkActive="ant-menu-item-selected"
+              (click)="closeMenu('start-here')"
+              >
             Start Here
             </li>
-            <li [routerLink]="['/faqs']"
-            routerLinkActive="active ant-menu-item-selected">
+            <li 
+            (click)="closeMenu('faqs')"
+            routerLinkActive="ant-menu-item-selected">
               FAQs
             </li>
-            <li [routerLink]="['/get-in-touch']"
-            routerLinkActive="active ant-menu-item-selected">
+            <li 
+            (click)="closeMenu('get-in-touch')"
+            routerLinkActive="ant-menu-item-selected">
               Get in Touch
             </li>
-            <li [routerLink]="['/services']"
-            routerLinkActive="active ant-menu-item-selected">
+            <li 
+            (click)="closeMenu('services')"
+            routerLinkActive="ant-menu-item-selected">
               Services
             </li>
             <li
-            routerLinkActive="active ant-menu-item-selected">
+            routerLinkActive="ant-menu-item-selected">
             <a href="https://www.plnr.in/blog">Blog</a>
             </li>
           </ul>
@@ -121,12 +127,12 @@
       <div nz-row>
         <div nz-col nzSpan="8" nzOffset="2">
           <a>
-            <img src="./assets/images/apple.svg" alt="menu icon"  width="150"/>
+            <img src="assets/images/apple.svg" alt="menu icon"  width="150"/>
           </a>
         </div>
         <div nz-col nzSpan="8" nzOffset="2">
             <a>
-                <img src="./assets/images/android.svg" alt="menu icon"  width="165"/>
+                <img src="assets/images/android.svg" alt="menu icon"  width="165"/>
             </a>
         </div>
       </div>

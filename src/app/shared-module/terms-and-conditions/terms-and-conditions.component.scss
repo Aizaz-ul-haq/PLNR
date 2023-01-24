@@ -1,39 +1,14 @@
 @import './../../../variables.scss';
-:host ::ng-deep {
-    .ant-table-thead>tr>th,
-    .ant-table-tbody>tr>td {
-        padding: 12px;
-        font-size: 13px;
-    }
-    .ant-table-thead>tr>th {
-        color: #3f3f3f;
-        background: #00bfff;
-        font-weight: 600;
-    }
-    .ant-table-tbody>tr>td {
-        border-bottom: 1px solid #dedede;
-    }
-
-    // @media (max-width: 480px) {
-    //     .ant-table-wrapper {
-    //         max-width: 380px;
-    //         overflow: auto;
-    //     }
-    // }
-   
-}
-
 
 .HomeBanner {
-    // background-image: url("/assets/images/learn-screen.jpg");
-    background-image: url('/assets/images/agreement.png');
+    background-image: url('/assets/images/privacy-policy.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 100% 66%;
     color: $white;
     position: relative;
     text-align: center;
     height: 400px;
-    background-position: center;
 }
 
 .banner-heading-top {
@@ -52,17 +27,32 @@
 
 .section-heading {
     position: relative;
+    text-align: center;
     display: block;
-    margin: 30px auto 30px;
+    margin: 25px auto 30px;
+    width: 650px;
 
     h3 {
-        font-size: 24px;
+        font-size: 26px;
+        font-weight: 300;
         color: $dark-text-clr;
-        margin-bottom: 00px;
+        margin-bottom: 20px;
 
         span {
             font-weight: 500;
         }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        left: auto;
+        right: auto;
+        margin: 0px auto;
+        background-color: $primary;
+        top: -22px;
     }
 
     p {
@@ -80,13 +70,12 @@
 
 .terms {
     margin-bottom: 20px;
-    h4{
-        font-size: 18px;
-    }
+
     p {
-        font: 14px;
         color: #000000;
         margin-top: 10px;
+        line-height: 26px;
+        font-weight: 300;
     }
 
     h3 {
@@ -94,23 +83,21 @@
     }
 }
 
+.m-left {
+    margin-left: 15px;
+}
+
 @media (max-width: 480px) {
     .section-heading {
         width: 100%;
     }
-    .banner-heading-top{
-        font-size: 32px;
-        line-height: 32px;
-    }
+
     .terms {
         padding: 0;
 
         p {
             text-align: unset;
         }
-    }
-    .table-responsive{
-        overflow-x: auto;
     }
 
 }
