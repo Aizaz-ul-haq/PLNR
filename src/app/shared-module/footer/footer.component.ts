@@ -32,7 +32,7 @@ export class FooterComponent implements OnInit {
       this.seconds = 5;
       modal.destroy();
       clearInterval(interval)
-    }, 5000);
+    }, 50000);
     
   }
 
