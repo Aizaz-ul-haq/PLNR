@@ -5,125 +5,18 @@ body{
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
-.alert-modal {
-    .ant-modal-content {
-        border-radius: 6px;
-        box-shadow: none;
 
-        .ant-modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 24px;
-            height: 24px;
-            margin: 0;
-            padding: 0;
-            box-shadow: none;
-            border: none;
-            background-color: white;
-            border-radius: 50%;
-            cursor: pointer;
-            z-index: 100;
-
-            &:focus {
-                outline: none;
-            }
-
-            .ant-modal-close-x {
-                width: 24px;
-                height: 24px;
-                font-size: 18px;
-                font-style: normal;
-                line-height: 24px;
-                text-align: center;
-                text-transform: none;
-                text-rendering: auto;
-
-                .anticon {
-                    background: url('https://d1um67fy76m42o.cloudfront.net/assets/icons/close_small.png');
-                    height: 24px;
-                    width: 24px;
-                    display: block;
-                    text-align: center;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: 12px 12px;
-                    margin: 0px auto;
-
-                    svg {
-                        display: none;
-                        visibility: hidden;
-                    }
-                }
-            }
-        }
-
-
-        .ant-modal-body {
-            padding: 0px;
-        }
-    }
-}
-.x-modal-body {
-    .x-modal-heading {
-        margin-bottom: 50px;
-        .heading-title {
-            color: $modal-h-clr;
-            font-size: 20px;
-            line-height: 20px;
-            font-weight: 400;
-            a {
-                margin-right: 10px;
-            }
-        }
-        p {
-            font-size: 14px;
-            line-height: 24px;
-            color: $modal-h-clr;
-            font-weight: 400;
-            margin-bottom: 0px;
-        }
-    }
-    .x-model-content {
-        margin-bottom: 40px;
-    }
+.ant-modal-mask {
+    background-color: rgb(0 0 0 / 79%);
 }
 
-.video-container {
-    padding: 5px;
-    padding-bottom: 0px;
-}
 .watch_how_it_works_modal {
-    max-width: 1150px;
-    margin: 0 auto;
-    overflow: visible;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .ant-modal {
-        margin-top: -120px;
-    }
-
-    .video-container {
-        padding: 0px;
-
-        iframe {
-            width: 100%;
-            min-height: 540px;
-            vertical-align: middle;
-        }
-    }
-
-
-    .ant-modal-content {
+    .ant-modal{
+        min-width: 1000px !important;
+        margin-top: -50px;
         .ant-modal-close {
-            position: absolute;
-            top: -60px;
-            right: -75px;
-            width: 48px;
-            height: 48px;
+            width: 50px;
+            height: 50px;
             margin: 0;
             padding: 0;
             box-shadow: none;
@@ -131,78 +24,58 @@ body{
             background-color: white;
             border-radius: 50%;
             cursor: pointer;
-            z-index: 100;
-
-            &:focus {
-                outline: none;
-            }
-
-            .ant-modal-close-x {
-                width: 24px;
-                height: 24px;
-                font-size: 24px;
-                font-style: normal;
-                line-height: 24px;
-                text-align: center;
-                text-transform: none;
-                text-rendering: auto;
-                margin: 0 auto;
-
-                .anticon {
-                    background: url('https://d1um67fy76m42o.cloudfront.net/assets/icons/close_small.png');
-                    height: 24px;
-                    width: 24px;
-                    display: block;
-                    background-position: center center;
-                    background-repeat: no-repeat;
-
-                    svg {
-                        display: none;
-                        visibility: hidden;
-                    }
+            position: absolute;
+            top: -41px;
+            color: #00BFFF;
+            right: -51px;
+            .ant-modal-close-x { 
+                font-size: 23px;
+                .anticon{
+                    position: absolute;
+                    right: 13px;
+                    top: 12px;
                 }
+            }
+            
+        }
+        .ant-modal-body{
+                padding: 0px;
+                height: 540px;
+        }
+        .video-container {
+            padding: 0px;
+            iframe {
+                 width: 100%;
+                 height: 100%;
+                min-height: 540px;
+                vertical-align: middle;
+                border-radius: 2px;
             }
         }
     }
-
+   
 
 }
 
-// .ant-modal-confirm-btns {
-//     float: unset !important;
-//     margin-top: 0px !important;
-// }
-// .ant-modal-confirm {
-//     .ant-modal-body {
-//         padding: 32px 32px 45px;
-//     }
-// }
-// .ant-modal-content {
-//     border-radius: 10px !important;
-//     .ant-modal-body {
-//         .ant-btn{
-//             border-color: #00bfff;
-//             background: #00bfff;
-//             border-radius: 4px;
-//             margin: 0 auto;
-//             display: block;
-//           }
-//     }
-    
-//     .anticon{
-//         display: none;
-//     }
-//     .ant-modal-confirm-title{
-//         font-size: 18px;
-//         font-weight: 600;
-//         color:#214F76;
-//         text-align: center;
-//     }
-   
-//   }
-//   .ant-modal-confirm-body>.anticon+.ant-modal-confirm-title+.ant-modal-confirm-content {
-//     margin-left: 0px
-// }
+.footer-modal{
+ 
+        h2{
+            font-size: 20px;
+            font-weight: 600;
+            color:#214F76;
+            text-align: center;
+        }
+        .anticon{
+            display: none;
+        }
+        .ant-modal-content {
+            border-radius: 6px;
+        }
+        .content{
+            max-width: 402px;
+            margin: 0 auto;
+        }
+}
 
 
 .mb-0{
@@ -247,4 +120,29 @@ body{
 .container{
     width: 100%;
 }
+}
+
+@media (min-width: 1900px){
+    .watch_how_it_works_modal {
+        .ant-modal{
+            margin-top: 30px;
+            min-width: 1300px !important;
+            .ant-modal-body{
+                    padding: 0px;
+                    height: 600px;
+            }
+            .video-container {
+                padding: 0px;
+                iframe {
+                     width: 100%;
+                     height: 100%;
+                    min-height: 600px;
+                    vertical-align: middle;
+                    border-radius: 2px;
+                }
+            }
+        }
+       
+    
+    }
 }

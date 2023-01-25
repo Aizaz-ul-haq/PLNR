@@ -178,12 +178,19 @@
     </div>
   </section>
 
-<ng-template #sayHelloTemplate>
-    <p class="fs-12">Arevuk Advisory Services Pvt Ltd (tradename: PLNR) is a SEBI Registered Investment Advisor (INA). SEBI
-    requires RIA's to disclose complaint status on their homepage. Pursuant to the same.</p>
+  <nz-modal [(nzVisible)]="showVideoModal" [nzWrapClassName]="'footer-modal'"
+    (nzOnCancel)="handleCancelTop()" (nzOnOk)="handleOkTop()" [nzFooter]="null">
+    <ng-container *nzModalContent>
+      <h2>Regulatory Disclosures</h2>
+      <div class="content">
+        <p class="fs-12">Arevuk Advisory Services Pvt Ltd (tradename: PLNR) is a SEBI Registered Investment Advisor (INA). SEBI
+          requires RIA's to disclose complaint status on their homepage. Pursuant to the same.</p>
+      </div>
+      
+        <p class="timer-text">This modal closes in {{seconds}} seconds</p>
+    </ng-container>
+</nz-modal>
 
-    <p class="timer-text">This modal closes in {{seconds}} seconds</p>
-</ng-template>
   
 
   
