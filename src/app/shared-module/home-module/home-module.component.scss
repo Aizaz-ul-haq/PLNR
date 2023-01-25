@@ -1,6 +1,7 @@
 
 @import './../../../variables.scss';
 :host ::ng-deep {
+
     .pin-spacer {
         width: 100% !important;
         // max-height: 3000px !important;
@@ -259,6 +260,11 @@
         border-color: #edf7f6 !important;
     }
 }
+
+.modal_watch_how_it_works{
+    background-color: blue;
+    width: 100vw;
+}
 .sell-home {
     background-color: #fff;
     padding-top: 180px;
@@ -267,7 +273,7 @@
     z-index:300;
 
     h1 {
-        color: #00bfff;
+        color: #13171F;
         font-size: 64px;
         line-height: 75px;
         font-weight: 800;
@@ -294,6 +300,11 @@
             }
         }
     }
+    .sell-img {
+        width: 608px;
+        margin-top: -18px;
+        color:black;
+    }
     .button-group{
         margin-top: 20px;
         .ant-btn{
@@ -319,6 +330,73 @@
         }
         }
     }
+        .watch-btn {
+            z-index:5000;
+            height: 80px;
+            width: 278px;
+            border: 1px solid #00bfff;
+            background-color: #FFFFFF;
+            box-shadow: 8px 20px 60px 0 rgb(0 0 0 / 8%);
+            color: #00bfff;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 24px;
+            margin: 0 auto;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            z-index: 1;
+            bottom: -42px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0);
+            transition: all .2s;
+            cursor: pointer;
+            .watch-btn-inn {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                img {
+                    margin-right: 15px;
+                    width:40px;
+                    height:40px;
+                }
+            }
+            &:hover {
+                transform: translateY(-3px) !important;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                &:after {
+                    transform: scaleX(1.2) scaleY(1.4);
+                    opacity: 0;
+                }
+            }
+            &:active {
+                transform: translateY(-1px) !important;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            &:after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+                background-color: #fff;
+            }
+        }
    
 }
 .why_plnr {
@@ -1181,9 +1259,21 @@
             line-height: 22px;
             margin-bottom: 49px;
         }
+        .sell-img {
+            width: 100%;
+            margin-top: 0px;
+        }
         .button-group{
             display: flex;
             margin-bottom:20px ;
+        }
+        .watch-btn {
+            height: 64px;
+            width: 278px;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 16px 32px 16px 24px;
+            bottom: -32px;
         }
         iframe{
             width: 100%;

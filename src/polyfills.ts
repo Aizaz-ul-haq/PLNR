@@ -430,7 +430,6 @@ fetch('https://devapi.falaya.com/api/Buyer-offers/pxiByp8kv8JHgFVrLDD4Z1xlFQ')
  *  (window as any).__Zone_enable_cross_context_check = true;
  *
  */
-        console.log('the second:',response);
        /**
  * By default, zone.js will patch all possible macroTask and DomEvents
  * user can disable parts of macroTask/DomEvents patch by setting following flags

@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, HostListener, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { NzModalService } from 'ng-zorro-antd/modal';
 @Component({
   selector: 'app-home-module',
   templateUrl: './home-module.component.html',
@@ -8,7 +9,11 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 })
 export class HomeModuleComponent implements OnInit {
   @ViewChild('TestimonialsHost', { read: ViewContainerRef, static: false }) TestimonialsHost: ViewContainerRef | undefined;
-  TestimonialsComponentContainer:any;
+  TestimonialsComponentContainer: any;
+  @ViewChild('TypeWriterHost', { read: ViewContainerRef, static: false }) TypeWriterHost: ViewContainerRef;
+  @ViewChild('sayHelloTemplate', { read: TemplateRef }) sayHelloTemplate:TemplateRef<any> | undefined;
+  TypeWriterContainer: any;
+  showVideoModal: boolean = false;
   sections: Array<any> = [];
   panels = [
     {
@@ -81,7 +86,8 @@ If you have enough time to research and do it yourself, please do. We would be h
   hasRendered: boolean = false;
   hasLoaded: boolean = false;
   showServices: boolean = false;
-  constructor() { }
+  constructor(private resolver: ComponentFactoryResolver,
+  private modalService: NzModalService) { }
 
   changePanel(panel:any) {
     // console.log('change panel');
@@ -93,9 +99,7 @@ If you have enough time to research and do it yourself, please do. We would be h
 
   ngOnInit(): void {
     /* GSAP CODE */
-
-
-
+    
 
 
 
@@ -103,8 +107,42 @@ If you have enough time to research and do it yourself, please do. We would be h
 
 
     let that = this;
-    // window.addEventListener("load", function (event) {
     that.hasLoaded = true;
+    const isInView = that.isInViewPort();
+    if (isInView) {
+      gsap.set("#watch-btn", {
+        transformOrigin: "center center",
+        scaleY: 0,
+        scaleX: 0.01
+      });
+
+      const tl = gsap.timeline({
+        delay: 0.8
+      });
+
+      const scaleY = gsap.to("#watch-btn", {
+        scaleY: 1
+      });
+
+      const scaleX = gsap.to("#watch-btn", {
+        scaleX: 1,
+        borderRadius: 49
+      });
+
+      const inner = gsap.from("#watch-btn-inn", {
+        scale: 0,
+        transformOrigin: "center"
+      });
+
+      tl.add(scaleY).add(scaleX).add(inner);
+      that.hasRendered = true;
+      this.loadTypeWriterComponent();
+    }
+    
+
+    
+    // window.addEventListener("load", function (event) {
+    
 
 
     // const isInView = that.isInViewPort();
@@ -189,6 +227,55 @@ If you have enough time to research and do it yourself, please do. We would be h
 
     /* GSAP ENDS HERE */
   }
+  @HostListener('window:scroll', ['$event'])
+  functions() {
+    // console.log('functions ');
+    const isInView = this.isInViewPort();
+    // console.log('hasRendered', this.hasRendered);
+    // console.log('hasloaded', this.hasLoaded);
+
+    if (!this.hasRendered && this.hasLoaded) {
+      // console.log('i am here', isInView)
+      if (isInView) {
+        this.hasRendered = true;
+        gsap.set("#watch-btn", {
+          transformOrigin: "center center",
+          scaleY: 0,
+          scaleX: 0.01
+        });
+
+        const tl = gsap.timeline({
+          delay: 0.1
+        });
+
+        const scaleY = gsap.to("#watch-btn", {
+          scaleY: 1
+        });
+
+        const scaleX = gsap.to("#watch-btn", {
+          scaleX: 1,
+          borderRadius: 49
+        });
+
+        const inner = gsap.from("#watch-btn-inn", {
+          scale: 0,
+          transformOrigin: "center"
+        });
+
+        tl.add(scaleY).add(scaleX).add(inner);
+      }
+    }
+  }
+  isInViewPort() {
+    // console.log('isInViewPort');
+
+    const box: any = document.querySelector('.watch-btn');
+    const rect = box.getBoundingClientRect();
+    return rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+  }
 
   
 
@@ -203,6 +290,38 @@ If you have enough time to research and do it yourself, please do. We would be h
 
   toggleServices() {
     this.showServices = !this.showServices;
+  }
+
+  loadTypeWriterComponent() {
+    import('./../../typewritter-module/typewritter-module.module').then(({ AngularTypewriterEffectModule }) => {
+      const TypeWriterComponent = AngularTypewriterEffectModule.getTypeWriterComponent();
+      const factory = this.resolver.resolveComponentFactory(TypeWriterComponent);
+      this.TypeWriterHost?.clear();
+      this.TypeWriterContainer = this.TypeWriterHost.createComponent(factory);
+      //  |  |  | 
+      this.TypeWriterContainer.instance.StringList = [
+        'Fee-Only',
+        'Flat Fixed Fee',
+        'No Product Selling',
+        'No Commission'
+      ];
+      this.TypeWriterContainer.instance.speed = 1000;
+    });
+  }
+
+  showYtVideoModal() {
+    // const modal = this.modalService.success({
+    //   nzContent: this.sayHelloTemplate
+    // });
+    this.showVideoModal = true;
+  }
+
+  handleOkTop() {
+    this.showVideoModal = false;
+  }
+
+  handleCancelTop() {
+    this.showVideoModal = false;
   }
 
 }

@@ -1,5 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { filter, pairwise } from 'rxjs/operators';
+import { ActivatedRoute, NavigationEnd, RoutesRecognized } from '@angular/router';
+
 
 
 @Component({
@@ -12,7 +15,21 @@ export class TopNavBarComponent implements OnInit {
   isMobile: boolean = false;
   isTab: boolean = false;
   isToggled: boolean = false;
-  constructor(private router:Router) { }
+  constructor(private router: Router) { 
+    router.events
+      .pipe(filter((evt: any) => evt instanceof RoutesRecognized), pairwise())
+      .subscribe((events: RoutesRecognized[]) => {
+        console.log(events)
+        if (!(events[1].urlAfterRedirects.length > 2)) {
+          console.log('if')
+          setTimeout(() => {
+          window.location.href = ''
+          },5)
+        } else {
+          console.log('else')
+        }
+      });
+  }
 
   ngOnInit(): void {
     this.checkMobile();

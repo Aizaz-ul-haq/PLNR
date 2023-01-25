@@ -1,8 +1,10 @@
 <section class="sell-home">
     <div nz-row>
         <div nz-col nz-col  [nzLg]="{ span:10 , offset: 2 }" [nzMd]="{ span: 10, offset: 2 }" [nzXs]="{ span: 24, offset: 0 }">
-            <h1>Financial Planning <span class="d-block">Simplified</span> </h1>
-            <p>Fee-Only | Flat Fixed Fee | No Product Selling | No Commission
+            <h1>Financial Planning Simplified </h1>
+            <!--  -->
+            <h1><ng-template #TypeWriterHost></ng-template></h1>
+            <p>
                 <span>
                     Experience in handling <strong> 500+</strong> fee-only financial planning clients
                 </span>
@@ -13,10 +15,32 @@
                 <button  nz-button nzType="primary" nzsize="large" class="btn-primary">Sign Up</button>
             </div>
         </div>
-        <div nz-col [nzLg]="{ span:12 , offset: 0 }" [nzMd]="{ span: 12, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
+        <!-- <div nz-col [nzLg]="{ span:12 , offset: 0 }" [nzMd]="{ span: 12, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
             class="text-center">
             <iframe width="600" height="400" src="https://www.youtube.com/embed/g9Aq1YtSo-o" title="Goal Planning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
+        </div> -->
+        <div nz-col [nzLg]="{ span:11 , offset: 1 }" [nzMd]="{ span: 24, offset: 0 }" [nzXs]="{ span: 24, offset: 0 }"
+            class="text-center">
+            <!-- <img [src]="assetUrl +'/images/thumbnail.svg'"  alt="Logo" class="sell-img" /> -->
+            <picture>
+                <source srcset="
+                              assets/images/finance_hero.svg 1x,
+                              assets/images/finance_hero.svg 2x"
+                    type="image/webp" />
+                <source srcset="
+                              assets/images/finance_hero.svg"
+                    type="image/svg" />
+                <img src="assets/images/finance_hero.svg"
+                    class="sell-img" alt="home_illustration" />
+            </picture>
+        </div>
+    </div>
+    <div class="btn watch-btn" id="watch-btn" >
+        <div class="watch-btn-inn" id="watch-btn-inn">
+            <img src="assets/images/new.png" alt="play" />
+            <span (click)="showYtVideoModal()">Watch how it works</span>
+            <!-- <a href="callto:+12252896455" *ngIf="showLink">{{buttonText}}</a> -->
         </div>
     </div>
 </section>
@@ -349,4 +373,21 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+<nz-modal [nzStyle]="{ top: '20px' }" [(nzVisible)]="showVideoModal" [nzWrapClassName]="'vertical-center-modal alert-modal x-modal watch_how_it_works_modal'"
+    (nzOnCancel)="handleCancelTop()" (nzOnOk)="handleOkTop()" [nzFooter]="null">
+    <ng-container *nzModalContent>
+        <div class="x-modal-body container video-container">
+            <div class="x-model-content">
+            <iframe src="https://www.youtube.com/embed/I0at19aQM2Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" enablejsapi="1"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </ng-container>
+</nz-modal>
 
