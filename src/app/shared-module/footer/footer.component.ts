@@ -10,7 +10,8 @@ export class FooterComponent implements OnInit {
   
 @ViewChild('sayHelloTemplate', { read: TemplateRef }) sayHelloTemplate:TemplateRef<any> | undefined;
   seconds: any = 5;
-  showVideoModal:boolean = false;
+  showVideoModal: boolean = false;
+  interval: any;
   constructor(private modalService: NzModalService) { }
 
   ngOnInit(): void {
@@ -18,6 +19,15 @@ export class FooterComponent implements OnInit {
   }
   openSEBIModal(): void {
     this.showVideoModal = true; 
+    this.seconds = 5;
+    this.interval?.clearInterval();
+    this.interval = setInterval(() => {
+      if (this.seconds == 0) {
+        this.showVideoModal = false;
+      } else {
+        this.seconds = this.seconds - 1;
+      } 
+    },1000)
   }
 
   handleCancelTop(){
