@@ -1244,7 +1244,14 @@
         }
     }
 }
-
+@media (max-width: 1900px) {
+    .sell-home {
+            h1 {
+                font-size: 45px;
+                line-height: 50px;
+            }
+        }
+}
 @media only screen and (max-width: 480px) { 
 
     .sell-home {
