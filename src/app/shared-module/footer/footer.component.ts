@@ -9,7 +9,7 @@ import { NzModalService } from 'ng-zorro-antd/modal';
 export class FooterComponent implements OnInit {
   
 @ViewChild('sayHelloTemplate', { read: TemplateRef }) sayHelloTemplate:TemplateRef<any> | undefined;
-  seconds: any = 5;
+  seconds: any = 10;
   showVideoModal: boolean = false;
   interval: any;
   constructor(private modalService: NzModalService) { }
@@ -17,9 +17,36 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   
   }
+  listOfData:any = [
+    {
+      key: '1',
+      Pending_as_of_last_month: 0,
+      received_from: 'At the beginning of month',
+    },
+    {
+      key: '2',
+      Pending_as_of_last_month: 0,
+      received_from: 'Received during the month',
+    },
+    {
+      key: '4',
+      Pending_as_of_last_month: 0,
+      received_from: 'Resolved during the month',
+    },
+    {
+      key: '5',
+      Pending_as_of_last_month: 0,
+      received_from: 'Pending at the ending of the month',
+    },
+    {
+      key: '6',
+      Pending_as_of_last_month: '',
+      received_from: 'Reason for pendency',
+    }
+  ];
   openSEBIModal(): void {
     this.showVideoModal = true; 
-    this.seconds = 5;
+    this.seconds = 10;
     this.interval?.clearInterval();
     this.interval = setInterval(() => {
       if (this.seconds == 0) {

@@ -319,6 +319,10 @@ If you have enough time to research and do it yourself, please do. We would be h
   handleOkTop() {
     this.showVideoModal = false;
   }
+  routeTo(address:string) {
+    
+    window.location.href = address;
+  }
 
   handleCancelTop() {
     this.showVideoModal = false;

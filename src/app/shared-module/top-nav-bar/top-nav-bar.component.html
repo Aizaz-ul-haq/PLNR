@@ -28,7 +28,7 @@
                 <a [routerLink]="['/start-here']"> Start Here </a>
             </li>
             <li nz-menu-item >
-                <a [routerLink]="['/faqs']"> FAQ </a>
+                <a [routerLink]="['/faqs']"> FAQs </a>
             </li>
             <li nz-menu-item >
                 <a [routerLink]="['/services']"> Services</a>
@@ -46,6 +46,9 @@
                 <a>Sign IN</a>
                 <a>Sign UP</a>
             </div>
+            <!-- <div *ngIf="isMobile" class="right_sign_up">
+              <button>Sign up</button>
+            </div> -->
          
         </div>
       </div>
@@ -122,18 +125,6 @@
             nzShape="round">
             SIGN UP
           </button>
-        </div>
-      </div>
-      <div nz-row>
-        <div nz-col nzSpan="8" nzOffset="2">
-          <a>
-            <img src="assets/images/apple.svg" alt="menu icon"  width="150"/>
-          </a>
-        </div>
-        <div nz-col nzSpan="8" nzOffset="2">
-            <a>
-                <img src="assets/images/android.svg" alt="menu icon"  width="165"/>
-            </a>
         </div>
       </div>
     </div> 

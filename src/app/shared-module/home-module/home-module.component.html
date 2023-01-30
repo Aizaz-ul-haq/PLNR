@@ -6,13 +6,13 @@
             <h1><ng-template #TypeWriterHost></ng-template></h1>
             <p>
                 <span>
-                    Experience in handling <strong> 500+</strong> fee-only financial planning clients
+                    Experience in handling 500+ fee-only financial planning clients.
                 </span>
             </p>
 
             <div class="button-group">
-                <button nz-button nzType="primary" nzsize="large" class="btn-primary">Sign In</button> 
-                <button  nz-button nzType="primary" nzsize="large" class="btn-primary">Sign Up</button>
+                <button nz-button nzType="primary" nzsize="large" class="btn-primary" (click)="routeTo('https://plnr.in/auth/signin')">Sign In</button> 
+                <button  nz-button nzType="primary" nzsize="large" class="btn-primary" (click)="routeTo('https://plnr.in/auth/signup')">Sign Up</button>
             </div>
         </div>
        
@@ -67,7 +67,7 @@
                 <div class="card-body">
                     <h3>Seamless Onboarding</h3>
                     <p>We ensure seamless onboarding. No excel sheets, no signing contracts manually.</p>
-                    <img src="assets/images/onboarding.svg" alt="img" />
+                    <img src="assets/images/register.svg" alt="img" />
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="card">
                 <div class="card-body">
                     <h3>Independent</h3>
-                    <p>- Not affiliated with any bank, mutual fund, or insurance company.</p>
+                    <p>Not affiliated with any bank, mutual fund, or insurance company.</p>
                     <img src="assets/images/independent.svg" alt="img" />
                 </div>
             </div>
@@ -87,7 +87,7 @@
                 <div class="card-body">
                     <h3>Fee-Only</h3>
                     <p>Compensated only with the fee clients pay directly, not earning commissions by any means.</p>
-                    <img src="assets/images/money.svg" alt="img" />
+                    <img src="assets/images/fee-only.svg" alt="img" />
                  </div>
             </div>
         </div>
@@ -97,13 +97,11 @@
                 <div class="card-body">
                     <h3>SEBI Registered</h3>
                     <p>We are registered with the Securities and Exchange Board of India (SEBI) as an Investment Advisor (INA).</p>
-                    <img src="assets/images/register.svg" alt="img" />
+                    <img src="assets/images/onboarding.svg" alt="img" />
                 </div>
             </div>
         </div>
     </div>
-    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore" >LEARN
-        MORE</button>
 </section>
 
 <section class="how_it_works_title">
@@ -123,7 +121,7 @@
                 <div class="card-body">
                     <h3>Introduction</h3>
                     <p>We discuss our offerings to address your personalized financial planning needs.</p>
-                    <img src="assets/images/intro.svg" alt="img" />
+                    <img src="assets/images/handshake.png" alt="img" />
                 </div>
             </div>
             <div class="card">
@@ -152,7 +150,7 @@
                 <div class="card-body">
                     <h3>Final Plan</h3>
                     <p>We share the financial plan with product recommendations after you approve the calculations.</p>
-                    <img src="assets/images/final.svg" alt="img" />  
+                            <img src="assets/images/planning.svg" alt="img" />
                 </div>
             </div>
             <div class="card">
@@ -164,8 +162,8 @@
             </div>
         </div>
     </div>
-    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore" >CONTACT
-        US</button>
+    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore" ><a href="">CONTACT
+    US</a></button>
     <div class="curve_path"></div>
 </section>
 
@@ -174,10 +172,10 @@
     <div class="container">
         <div nz-row class="headings">
             <div nz-col nzSpan="24">
-                <h2>Our <span>Pricing</span></h2>
+                <h2>Our <span>Services</span></h2>
                 <p>
-                    Our listings start at a low flat fee and licensed agents are available for a low flat fee per
-                    service if you need extra the support during the process.
+                    We offer comprehensive financial planning at a flat fixed fee. We do not charge differential fees based on your net
+                    worth or residential status. Our fee is 50% less than our counterparts in the fee-only financial planning business.
                 </p>
             </div>
         </div>
@@ -187,14 +185,14 @@
                     <div class="card best_value">
                         <p class="value_text">Best Value</p>
                         <div class="icon-img">
-                            <img class="list-img" src="assets/images/premium.svg" alt="professional" />
+                            <img class="list-img" src="https://d1um67fy76m42o.cloudfront.net/assets/images/price illustration.png" alt="professional" />
                         </div>
-                        <h3>Professional</h3>
+                        <h3>Comprehensive Financial Planning</h3>
                         <p>Flat Fixed Fee</p>
                         <h2>Rs. 11,000</h2>
                         <p class="price-des">per year</p>
                         <button nz-button nzType="primary" class="buttons">
-                            Get The Professional
+                           <a href="/get-in-touch">Contact Us</a> 
                         </button>
                         <ul>
                             <li>Risk Profiling</li>
@@ -214,7 +212,7 @@
                             <li>Tax efficient products</li> 
                             <li>Consultation for 1 year</li> 
                             <li>Review after 6 months</li> 
-                            <li>Mode of Delivery: E-mail</li>
+                            <li>Mode of Delivery: Online</li>
                             <li>Estimated Delivery Time: 10-15 Days</li>
                         </ul>
                         <small>We do not accept clients having net worth of more than 3 Crores.</small>
@@ -280,6 +278,7 @@
             </div>
         </div>
     </div>
+    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore"><a href="/faqs">Learn More</a></button>
 </section>
 
 <ng-template #extraTpl>
@@ -305,7 +304,7 @@
                                 <p>Extensive and in-depth collection of personal financial lessons.</p>
                             </div>
                         </div>
-                        <button nzbutton="" nztype="primary" nzsize="large" class="button"
+                        <button nzbutton="" nztype="primary" nzsize="large" class="button" (click)="routeTo('https://plnr.in/blog')"
                             >Read More</button>
                     </div>
                 </div>
@@ -330,12 +329,12 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="plnr-description">
-                            <img src="assets/images/contact.svg" alt="img" />                              <div class="plnr-info ">
+                            <img src="assets/images/contact.svg" alt="img" class="contact-plnr-img" />                              <div class="plnr-info ">
                                 <h4>Contact PLNR</h4>
                                 <p>Need more information about PLNR?</p>
                             </div>
                         </div>
-                        <button nzbutton="" nztype="primary" nzsize="large" class="button"
+                        <button nzbutton="" nztype="primary" nzsize="large" class="button" (click)="routeTo('/get-in-touch')"
                             >Contact Us</button>
                     </div>
                 </div>
@@ -345,7 +344,7 @@
                     <div class="card-body">
                         <div class="plnr-description">
                             <img src="assets/images/planning.svg" alt="img" />                                    <div class="plnr-info ">
-                                <h4>Sample financial plan</h4>
+                                <h4>Sample Financial Plan</h4>
                                 <p>Check our financial plan to see how we promote simplicity.</p>
                             </div>
                         </div>

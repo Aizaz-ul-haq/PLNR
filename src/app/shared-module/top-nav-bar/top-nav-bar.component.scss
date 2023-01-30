@@ -804,6 +804,24 @@
       }
     }
   }
+  .text-right{
+    .right_sign_up{
+      float:right;
+      button{
+        border: 1px solid $btn-primary;
+        background: transparent;
+        color:$btn-primary;
+            font-weight: 500;
+              padding: 5px 11px;
+              width: auto;
+              letter-spacing: normal;
+              display: block;
+              float: right;
+              // height: 15px;
+              border-radius: 4px;
+      }
+    }
+  }
 }
 
 .nav-drop-down {

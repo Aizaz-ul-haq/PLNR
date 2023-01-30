@@ -5,14 +5,14 @@
 }
 .HomeBanner {
     // background-image: url("/assets/images/learn-screen.jpg");
-    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/about-us-min.png');
+    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/team-min-2.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
     position: relative;
     text-align: center;
     height: 400px;
-    background-position: center 16%;
+    background-position: left;
 }
 
 .banner-heading-top {
@@ -83,6 +83,9 @@
     }
     p{
         text-align: center;
+    }
+    .inc__text{
+        font-size:19px;
     }
     .team-image {
 
@@ -176,7 +179,7 @@
         text-align: center;
         color: $dark-text-clr;
         line-height: 19px;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
     }
 
     [nz-row] {
@@ -190,8 +193,8 @@
     }
 
     .content {
-        padding-top: 100px;
-        padding-bottom: 80px;
+        // padding-top: 100px;
+        padding-bottom: 10px;
 
         .heading {
             width: unset;
@@ -229,7 +232,7 @@
     }
 
     .team {
-        padding-bottom: 200px;
+        // padding-bottom: 200px;
 
         .responsive {
             display: flex;
@@ -285,10 +288,11 @@
     .team-people {
         // padding-top: 300px;
         padding-bottom: 0px;
-        padding-top: 250px;
+        // padding-top: 250px;
+        padding-top:15px;
 
         .section-heading {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
 
             h2 {
                 margin-bottom: 0px;

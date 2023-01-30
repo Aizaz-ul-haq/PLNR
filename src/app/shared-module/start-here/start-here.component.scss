@@ -46,7 +46,7 @@ overflow-x: hidden;
   padding: 130px 0px;
 }
 .HomeBanner {
-    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/house-min.png');
+    background-image: url('https://d1um67fy76m42o.cloudfront.net/assets/images/start-here-min-3.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -229,13 +229,16 @@ overflow-x: hidden;
   }
   .feature-body{
     iframe{
-      width: 100%;
+      // width: 100%;
+      width:350px !important;
+      margin-left: 17px !important;
     }
     .main-section{
       .lighter {
         position: relative;
         text-align: left;
         padding: 0 10px;
+        font-size:24px;
     }
     }
 }

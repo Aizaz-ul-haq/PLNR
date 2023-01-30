@@ -159,8 +159,14 @@ nz-content {
 .anticon-loading {
     color: #ffff;
 }
+.cntct__text{
+    font-size:44px;
+}
 
 @media (max-width: 480px) {
+    .hideMobile {
+            display: none !important;
+        }
 
     .contact-form {
         padding: 60px 0px 60px 0px;
@@ -193,4 +199,19 @@ nz-content {
         }
 
     }
-}
+        .cntct__text {
+            font-size: 24px;
+        }
+    
+        .container{
+            max-width:380px !important;
+        }
+                .contact-form{
+                    .form-input {
+                        .callusbtn {
+                                margin: 0 4px;
+                            }
+                    }
+                }
+                
+    }

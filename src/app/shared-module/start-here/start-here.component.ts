@@ -37,5 +37,14 @@ export class StartHereComponent implements OnInit {
       this.isMobile = false;
     }
   }
+  routeTo(address: string,newTab:boolean = true) {
+    // window.location.href = address;
+    var a = document.createElement('a');
+   a.href = address;
+   if (newTab) {
+      a.setAttribute('target', '_blank');
+   }
+   a.click();
+  }
 
 }

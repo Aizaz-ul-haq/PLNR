@@ -292,7 +292,7 @@
         font-weight: 700;
         span {
             display: block;
-            font-size: 16px;
+            font-size: 19px;
             font-weight: 400;
             strong {
                 text-decoration: underline;
@@ -306,7 +306,7 @@
         color:black;
     }
     .button-group{
-        margin-top: 20px;
+        margin-top: 35px;
         .ant-btn{
             min-width: 160px;
             height: 50px;
@@ -461,7 +461,7 @@
         height: 418px;
         width: 760px;
         border-radius: 4px;
-        background-color: #FFFFFF;
+        background-color: #F8FBFF;
         box-shadow: 4px 8px 60px 0 rgb(0 0 0 / 8%);
         margin: 0 auto;
         min-height: unset;
@@ -736,7 +736,7 @@
 
             .card {
                 width: 100%;
-                background-color: #fff;
+                background-color: #F8FBFF;
                 max-height: 442px !important;
                 min-height: 442px !important;
                 height: 442px;
@@ -782,7 +782,7 @@
 
 .card {
 
-    background-color: #ffffff;
+    background-color: #F8FBFF;
     margin: 0;
     padding: 30px 40px;
     text-align: center;
@@ -1015,7 +1015,7 @@
 .mobile_scroll {
     .card {
         margin: 0px auto;
-        background-color: #ffffffed;
+        background-color: #F8FBFF;
         .buttons {
             margin-bottom: 64px;
         }
@@ -1161,6 +1161,23 @@
             }
         }
     }
+        .viewmore {
+            border-radius: 50px;
+            background-color: #fff;
+            color: $btn-primary;
+            margin: 60px auto 0;
+            font-weight: bold;
+            border: 1px solid $btn-primary;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 10px 35px;
+            letter-spacing: 1px;
+            height: auto;
+            width: auto;
+            outline: none;
+            cursor: pointer;
+        }
 }
 .box-section {
     //padding-top: 40px;
@@ -1216,6 +1233,9 @@
                         line-height: 28px;
                         margin: 0 0 40px 0;
                     }
+                }
+                .contact-plnr-img{
+                    width:140px;
                 }
             }
 
@@ -1289,6 +1309,11 @@
     .why_plnr{
         padding: 136px 0 160px;
         height: 480px;
+        .why_plnr_body{
+            h2{
+                font-size: 30px;
+            }
+        }
         -webkit-clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
          clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
          .why_falaya_body
@@ -1357,7 +1382,7 @@
             }
         }
         p{
-            font-size: 14px;
+            font-size: 18px;
             letter-spacing: 0;
             line-height: 24px;
         }
@@ -1397,23 +1422,27 @@
                     &:first-child{
                         margin-left: 15px;
                     }
+                                        .card-body {
+                                            margin: 0;
+                    
+                                            h3 {
+                                                font-size: 20px;
+                                                line-height: 28px;
+                                                margin-bottom: 12px;
+                                            }
+                    
+                                            p {
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                margin-bottom: 28px;
+                                            }
+                    
+                                            img {
+                                                max-width: 200px;
+                                            }
+                                        }
                 }
-                .card-body{
-                    margin: 0;
-                    h3{
-                        font-size: 20px;
-                        line-height: 28px;
-                        margin-bottom: 12px;
-                    }
-                    p{
-                        font-size: 14px;
-                        line-height: 20px;
-                        margin-bottom: 28px;
-                    }
-                    img{
-                        max-width: 200px;
-                    }
-                }
+                
             
             }
         } 
@@ -1428,10 +1457,10 @@
             height: 980px !important;
         }
         .card{
-            margin: 0;
+            margin: 0 auto;
             min-width: auto;
-            width: 100%;
-            padding: 30px 20px;
+            width: 300px;
+            padding: 50px 20px;
             min-height: 715px;
             h3{
                 font-size: 24px;
@@ -1442,6 +1471,13 @@
             .buttons{
                 width: 100%;
                 margin-bottom: 30px;
+            }
+        }
+        .container{
+            .headings{
+                h2{
+                    font-size: 24px;
+                }
             }
         }
     }
@@ -1494,6 +1530,11 @@
         &:before{
             content: '';
             display: none;
+        }
+        .faq-header{
+            h2{
+                font-size: 24px;
+            }
         }
     }
   }
