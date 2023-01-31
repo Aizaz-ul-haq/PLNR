@@ -56,11 +56,11 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=HLZMwd8lJgQ')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/HLZMwd8lJgQ')"
                     nzShape="round">Watch in Hindi
                     </button>
+                    
                    </div>
-
                 <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
                     <div class="main-section">
                         <h2 class="lighter">Goal Planning </h2>
@@ -85,9 +85,10 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=oSuB2IS7fhw')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/oSuB2IS7fhw')"
                     nzShape="round">Watch in Hindi
                     </button>
+                    
                    </div>
 
             </div>
@@ -110,9 +111,10 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=A_WidsjYGf0')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/A_WidsjYGf0')"
                     nzShape="round">Watch in Hindi
                     </button>
+                    
                    </div>
 
                 <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
@@ -140,9 +142,10 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=Hdbi2q_zKnE&t=12s')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/Hdbi2q_zKnE')"
                     nzShape="round">Watch in Hindi
                     </button>
+                    
                    </div>
 
             </div>
@@ -165,9 +168,10 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=xXP69p8SSrs')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/xXP69p8SSrs')"
                     nzShape="round">Watch in Hindi
                     </button>
+                    
                    </div>
 
                 <div *ngIf="!isMobile" nz-col [nzXs]="{ span: 24, offset: 0 }" [nzLg]="{ span: 10, offset: 2}" [nzMd]="{ span: 10, offset: 2 }">
@@ -194,9 +198,10 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=5HrfTOcXCGw')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/5HrfTOcXCGw')"
                     nzShape="round">Watch in Hindi
                     </button>
+                    
                    </div>
 
             </div>
@@ -219,7 +224,7 @@
                     nz-button
                     class="hindi_btn"
                     nzType="default"
-                    (click)="routeTo('https://www.youtube.com/watch?v=7ivVjB__SIg')"
+                    (click)="showYtVideoModal('https://www.youtube.com/embed/7ivVjB__SIg')"
                     nzShape="round">Watch in Hindi
                     </button>
                    </div>
@@ -246,3 +251,15 @@
       </section>     
 </div>
 
+<nz-modal [(nzVisible)]="showVideoModal" [nzWrapClassName]="'vertical-center-modal watch_how_it_works_modal'"
+    (nzOnCancel)="handleCancelTop()" (nzOnOk)="handleOkTop()" [nzFooter]="null">
+    <ng-container *nzModalContent>
+        <div class="x-modal-body video-container">
+            <div class="x-model-content">
+                <iframe  [src]="source|safe" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </ng-container>
+</nz-modal>

@@ -20,6 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ServicesComponent } from './services/services.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { SafePipe } from './safe.pipe';
+
 
 
 
@@ -41,6 +43,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
     GetInTouchComponent,
     ServicesComponent,
     TermsAndConditionsComponent,
+    SafePipe
     
   ],
   imports: [
@@ -51,7 +54,8 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
     FormsModule,
     ReactiveFormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    
     
   ],
   exports: [
@@ -63,7 +67,8 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
     TestimonialsComponent,
     SlickTestimonialsComponent,
     FormsModule,
-    RouterModule
+    RouterModule,
+    SafePipe
   ]
 })
 export class SharedModuleModule { }

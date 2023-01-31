@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { DomSanitizer,SafeHtml  } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-start-here',
@@ -6,6 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./start-here.component.scss']
 })
 export class StartHereComponent implements OnInit {
+  showVideoModal: boolean=false;
   constructor() { 
     this.checkMobile();
 
@@ -17,7 +19,7 @@ export class StartHereComponent implements OnInit {
   }
   isMobile: boolean = false;
   isTab: boolean = false;
-
+  source:string;
   ngOnInit(): void {
   }
   resize(){
@@ -45,6 +47,18 @@ export class StartHereComponent implements OnInit {
       a.setAttribute('target', '_blank');
    }
    a.click();
+  }
+  showYtVideoModal(source:string) {
+   this.source=source;
+    this.showVideoModal = true;
+  }
+  
+  handleOkTop() {
+    this.showVideoModal = false;
+  }
+
+  handleCancelTop() {
+    this.showVideoModal = false;
   }
 
 }
