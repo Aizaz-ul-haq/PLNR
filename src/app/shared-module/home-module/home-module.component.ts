@@ -2,6 +2,7 @@ import { Component, ComponentFactoryResolver, HostListener, OnInit, TemplateRef,
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { NzModalService } from 'ng-zorro-antd/modal';
+import * as FileSaver from 'file-saver';
 @Component({
   selector: 'app-home-module',
   templateUrl: './home-module.component.html',
@@ -326,6 +327,11 @@ If you have enough time to research and do it yourself, please do. We would be h
 
   handleCancelTop() {
     this.showVideoModal = false;
+  }
+
+  downloadPDF() {
+    let url = 'https://d1um67fy76m42o.cloudfront.net/assets/offerfiles/plnrdoc.pdf'
+    FileSaver.saveAs(url, `${'your-file'}_${'downloadable'}.pdf`);
   }
 
 }

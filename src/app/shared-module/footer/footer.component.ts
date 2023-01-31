@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { NzModalService } from 'ng-zorro-antd/modal';
+import * as FileSaver from 'file-saver';
 
 @Component({
   selector: 'app-footer',
@@ -63,6 +64,11 @@ export class FooterComponent implements OnInit {
 
   handleOkTop(){
     this.showVideoModal = false;
+  }
+
+  downloadPDF() {
+    let url = 'https://d1um67fy76m42o.cloudfront.net/assets/offerfiles/plnrdoc.pdf'
+    FileSaver.saveAs(url, `${'your-file'}_${'downloadable'}.pdf`);
   }
 
 }
