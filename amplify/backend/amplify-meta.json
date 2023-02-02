@@ -1,0 +1,37 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-plnr-dev-191340-authRole",
+      "UnauthRoleArn": "arn:aws:iam::168875629331:role/amplify-plnr-dev-191340-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::168875629331:role/amplify-plnr-dev-191340-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-plnr-dev-191340-deployment",
+      "UnauthRoleName": "amplify-plnr-dev-191340-unauthRole",
+      "StackName": "amplify-plnr-dev-191340",
+      "StackId": "arn:aws:cloudformation:us-east-1:168875629331:stack/amplify-plnr-dev-191340/a2af3e30-a23a-11ed-aa0b-0e5a30013c2f",
+      "AmplifyAppId": "d3ilezg95og4rx"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-plnr-dev-191340-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      },
+      "lastPushTimeStamp": "2023-02-01T14:36:57.854Z",
+      "output": {
+        "CloudFrontSecureURL": "https://dz200vufmeuvv.cloudfront.net",
+        "S3BucketSecureURL": "https://plnr-aws-bucket-dev.s3.amazonaws.com",
+        "CloudFrontOriginAccessIdentity": "E31T9L1HUW3G6L",
+        "WebsiteURL": "http://plnr-aws-bucket-dev.s3-website-us-east-1.amazonaws.com",
+        "CloudFrontDistributionID": "E21HFT5ZFNTFAB",
+        "Region": "us-east-1",
+        "HostingBucketName": "plnr-aws-bucket-dev",
+        "CloudFrontDomainName": "dz200vufmeuvv.cloudfront.net"
+      },
+      "lastPushDirHash": "gUHLLlrm8II074g4VkGd6iiRRJI="
+    }
+  }
+}
