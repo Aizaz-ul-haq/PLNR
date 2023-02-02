@@ -95,7 +95,7 @@
             style="visibility:visible;position:sticky;">
             <div class="card">
                 <div class="card-body">
-                    <h3>SEBI Registered</h3>
+                    <h3>SEBI RIA</h3>
                     <p>We are registered with the Securities and Exchange Board of India (SEBI) as an Investment Advisor (INA).</p>
                     <img src="assets/images/onboarding.svg" alt="img" />
                 </div>
@@ -162,7 +162,7 @@
             </div>
         </div>
     </div>
-    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore" ><a href="">CONTACT
+    <button nzbutton="" nztype="primary" nzsize="large" class="viewmore" ><a [routerLink]="['/get-in-touch']">CONTACT
     US</a></button>
     <div class="curve_path"></div>
 </section>
@@ -189,7 +189,7 @@
                         </div>
                         <h3>Comprehensive Financial Planning</h3>
                         <p>Flat Fixed Fee</p>
-                        <h2>Rs. 11,000</h2>
+                        <h2 class="big_price">Rs. 11,000</h2>
                         <p class="price-des">per year</p>
                         <button nz-button nzType="primary" class="buttons">
                            <a href="/get-in-touch">Contact Us</a> 
@@ -215,8 +215,8 @@
                             <li>Mode of Delivery: Online</li>
                             <li>Estimated Delivery Time: 10-15 Days</li>
                         </ul>
-                        <small>We do not accept clients having net worth of more than 3 Crores.</small>
-                        <p class="net-worth"> Net Worth = Net Assets (other than self-occupied home) - Net Liabilities</p>
+                        <small>*We do not accept clients having net worth of more than 3 Crores.</small>
+                        <p class="net-worth"> *Net Worth = Net Assets (other than self-occupied home) - Net Liabilities</p>
                     </div>
                 </div>
             
