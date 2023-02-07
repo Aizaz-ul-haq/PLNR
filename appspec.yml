@@ -5,12 +5,6 @@ files:
   - source: /
     destination: /home/ubuntu/PLNR
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: PLNR
-    group: PLNR
-
 hooks:
   ApplicationStart:
     - location: scripts/app_start.sh
