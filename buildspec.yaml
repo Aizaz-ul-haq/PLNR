@@ -14,11 +14,12 @@ phases:
       - ng build --configuration production --aot
   post_build:
     commands:
+      - cp ./appspec.yml ./dist
+      - cp -r ./scripts ./dist
+      - cp ./package.json ./dist
       - echo Build completed on `date`
 artifacts:
   files:
     - "**/*"
-    - "scripts/*"
-    - "appspec.yml"
   base-directory: "dist*"
   discard-paths: yes
