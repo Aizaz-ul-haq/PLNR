@@ -7,6 +7,6 @@ files:
 
 hooks:
   ApplicationStart:
-    - location: scripts/app_start.sh
+    - location: app_start.sh
       timeout: 60
       runas: ubuntu

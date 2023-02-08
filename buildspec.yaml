@@ -15,8 +15,7 @@ phases:
   post_build:
     commands:
       - cp ./appspec.yml ./dist
-      - mkdir ./dist/scripts
-      - cp -R ./scripts ./dist/scripts
+      - cp -R ./scripts ./dist
       - cp ./package.json ./dist
       - echo Build completed on `date`
 artifacts:
