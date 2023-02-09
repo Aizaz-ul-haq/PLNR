@@ -43,11 +43,11 @@
         </div>
         <div nz-col class="text-right" nzSpan="10"> 
             <div class="nav-top-right">
-                <a>Sign IN</a>
-                <a>Sign UP</a>
+                <a href="https://plnr.in/auth/login">Sign IN</a>
+                <a href="https://plnr.in/auth/signup">Sign UP</a>
             </div>
             <div *ngIf="isMobile" class="right_sign_up">
-              <button nz-button  nzType="default">Sign up</button>
+              <button nz-button  nzType="default"><a href="https://plnr.in/auth/signup">Sign up</a></button>
             </div> 
          
         </div>
@@ -115,7 +115,9 @@
             nz-button
             nzType="default"
             nzShape="round">
-            SIGN IN
+            <a href="https://plnr.in/auth/login">
+              SIGN IN
+            </a>
           </button>
         </div>
         <div nz-col nzSpan="10" nzOffset="2">
@@ -123,7 +125,7 @@
             nz-button
             nzType="default"
             nzShape="round">
-            SIGN UP
+            <a href="https://plnr.in/auth/signup">SIGN UP</a>
           </button>
         </div>
       </div>
