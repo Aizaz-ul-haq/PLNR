@@ -5,12 +5,12 @@
       <div nz-row nzGutter="16">
         <div nz-col nzSpan="14">
           <div class="mobile-menu-icon" *ngIf="isMobile && !isToggled" (click)="toggleMobileMenu()">
-            <img src="assets/images/ic-burger-menu.svg" alt="menu icon" />
+            <img src="assetsFolder/images/ic-burger-menu.svg" alt="menu icon" />
           </div>
           <div class="full-logo" >
             <img
               (click)="closeMenu('')"
-              src="assets/images/logo.png"
+              src="assetsFolder/images/logo.png"
               alt="logo"
               width="96" height="30"
             />
@@ -61,14 +61,14 @@
             <a (click)="closeMenu('')">
             <img
             class="menu-logo"
-              src="assets/images/logo.png"
+              src="assetsFolder/images/logo.png"
               alt="logo"
             />
             </a>
           </div>
           <div nz-col nzSpan="2">
             <div class="close" (click)="closeMobileMenu()">
-                <img src="assets/images/ic-burger-close.svg" alt="menu icon"/>
+                <img src="assetsFolder/images/ic-burger-close.svg" alt="menu icon"/>
             </div>
           </div>
         </div>
